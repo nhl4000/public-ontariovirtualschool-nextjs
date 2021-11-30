@@ -24,9 +24,6 @@ const Hero = (props) => {
   });
   const [open, setOpen] = React.useState(true);
   const [play, setCheck] = React.useState(true);
-  {
-    console.log(props.heroPost.content.rendered);
-  }
   const video =
     props.heroPost?.herovid + "?title=0&byline=0&portrait=0&color=ffffff&autoplay=1&dnt=0&loop=1&autopause=0";
   const anim = props.heroPost?.animated.split(",");

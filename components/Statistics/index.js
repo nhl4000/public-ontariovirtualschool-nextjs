@@ -13,7 +13,6 @@ const Statistics = (props) => {
   var statsReady = true;
 
   var statsPost = Object.values(props)[0];
-  console.log(statsPost);
 
   const responsive = {
     superLargeDesktop: {
@@ -47,7 +46,6 @@ const Statistics = (props) => {
   return statsReady ? (
     <Box marginBottom={{ xs: 4, sm: 6, md: 8 }}>
       <Grid container spacing={2}>
-        {console.log(statsPost)}
         {statsPost.map((post, index) => (
           <Grid key={index} item xs={12} md={4}>
             <Typography variant="h3" align={"center"} gutterBottom>
