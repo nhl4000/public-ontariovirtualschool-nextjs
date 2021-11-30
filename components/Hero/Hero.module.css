@@ -1,0 +1,55 @@
+.HeroImg .HeroPlay {
+  position: relative;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.css-11gv7qo-MuiInputBase-root-MuiOutlinedInput-root,
+.css-a1kv6i-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 25px !important;
+  width: 100% !important;
+}
+.open {
+  display: none;
+}
+.HeroImg {
+  position: relative;
+  top: -150px;
+}
+.HeroImg
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.e1de0imv0.css-bhp9pd-MuiPaper-root-MuiCard-root.e1de0imv0 {
+  position: absolute;
+  top: 100px;
+  height: 110%;
+  width: 100%;
+  z-index: 10;
+}
+.HeroImg .css-1okhp2l-MuiPaper-root-MuiCard-root {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-shadow: none !important;
+  background-color: #f7f9fc !important;
+  z-index: 100;
+}
+.HeroClose {
+  cursor: pointer !important;
+}
+.HeroBtn {
+  margin-top: 10px !important;
+}
+@media screen and (min-width: 450px) {
+  .HeroBtn {
+    margin-left: 10px !important;
+    margin-top: 0 !important;
+    padding: 15px 22px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    width: 100% !important;
+  }
+}
