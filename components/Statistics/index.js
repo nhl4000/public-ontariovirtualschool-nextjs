@@ -54,7 +54,7 @@ const Statistics = (props) => {
                   case 0:
                     return (
                       <Box fontWeight={600}>
-                        <VisibilitySensor onChange={(isVisible) => setViewPortVisibility(isVisible)} delayedCall>
+                        <VisibilitySensor onChange={setViewPortVisibility} delayedCall>
                           <CountUp
                             redraw={false}
                             end={post.home_stats}
@@ -83,7 +83,7 @@ const Statistics = (props) => {
                           <CountUp
                             redraw={false}
                             duration="1"
-                            end={Number.parseInt(viewPortEntered ? 25000 : 0)}
+                            end={viewPortEntered ? 25000 : 0}
                             start={0}
                             className={"red-count-up"}
                             suffix={"+"}
@@ -127,7 +127,7 @@ const Statistics = (props) => {
             <Typography
               color="text.secondary"
               align={"center"}
-              component="p"
+              component="div"
               dangerouslySetInnerHTML={{ __html: post.content.rendered }}
             />
           </Grid>

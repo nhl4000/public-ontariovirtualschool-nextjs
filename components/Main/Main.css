@@ -1,0 +1,66 @@
+.SearchMargin {
+  margin-right: 10px !important;
+}
+.itemPrice {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.tabimg {
+  background-size: contain !important;
+}
+
+.tabcards h6 {
+  line-height: 1 !important;
+  font-size: 0.9em !important;
+}
+.tabcards span {
+  font-size: 0.9em !important;
+}
+.css-1624ae0-MuiPaper-root,
+.tabs,
+.MuiBox-root.css-19kzrtu {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 10px 0 !important;
+}
+.shomob {
+  display: none !important;
+}
+@media screen and (max-width: 450px) {
+  .shomob {
+    width: 100% !important;
+    display: block !important;
+  }
+  .shodesk {
+    display: none !important;
+  }
+  .SearchMargin {
+    margin-bottom: 10px;
+  }
+  .boxBtnSearch {
+    display: block !important;
+  }
+  .regBtn {
+    margin: 10px auto !important;
+    width: 100% !important;
+  }
+  .css-1wf8b0h-MuiTabs-flexContainer {
+    display: block !important;
+    text-align: center;
+    align-items: center;
+  }
+  #tabs .css-jpln7h-MuiTabs-scroller {
+    white-space: normal !important;
+  }
+  .css-1x2ti7s-MuiButtonBase-root-MuiTab-root {
+    font-size: 0.8rem !important;
+  }
+  .Mui-selected {
+    border-bottom: 2px solid #aa0303 !important;
+  }
+  .css-bv86iy-MuiTabs-indicator {
+    display: none !important;
+  }
+}

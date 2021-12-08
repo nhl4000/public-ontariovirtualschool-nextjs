@@ -1,0 +1,19 @@
+@media only screen and (max-width: 500px) {
+  .css-1l9ncmr,
+  .css-1p79io7,
+  .css-1qc7xnx {
+    left: 50% !important;
+    transform: translate(-50%) !important;
+  }
+  .css-1p79io7 {
+    top: 190px !important;
+  }
+  .css-1qc7xnx {
+    width: 260px !important;
+    height: auto !important;
+    bottom: -50 !important;
+  }
+  .css-1iz6ctu-MuiGrid-root .MuiBox-root.css-zop {
+    height: 670px !important;
+  }
+}
