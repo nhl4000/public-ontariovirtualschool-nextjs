@@ -21,18 +21,12 @@ import DescriptionIcon from "@material-ui/icons/Description";
 // import "./Register.css";
 
 const Register = (props) => {
-  const steps = props.steps;
+  const [steps, setSteps] = useState(props.steps);
 
   return (
     <Grid container spacing={4}>
       <Grid item xs={12}>
-        <Typography
-          variant="h5"
-          style={{ color: "#8e0000" }}
-          align="center"
-          style={{
-            fontWeight: 700,
-          }}>
+        <Typography variant="h5" style={{ color: "#8e0000", fontWeight: 700 }} align="center">
           REGISTRATION IS EASY
         </Typography>
 

@@ -129,8 +129,6 @@ const About = (props) => {
               style={{
                 objectFit: "cover",
                 filter: theme.palette.mode === "dark" ? "brightness(0.5)" : "none",
-              }}
-              style={{
                 position: "absolute",
                 bottom: "0",
                 right: "0",
