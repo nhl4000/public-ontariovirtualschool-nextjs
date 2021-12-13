@@ -21,6 +21,7 @@ import Footer from "../components/Footer";
 import Container from "../components/common/Container";
 import Script from "next/script";
 import { NoSsr } from "@material-ui/core";
+import fs from "fs";
 
 import { ChatSupport, Schema, TagManager, Pixel, Tracking } from "../components/Head";
 
@@ -100,23 +101,23 @@ export default function Home(props) {
         <Pixel />
         <Tracking />
         <ChatSupport />
-
         <Header data={props.header.html} />
 
-        <Hero heroPost={props.home.hero} />
-        <Statistics statsPost={props.home.statistics} />
-        <Reviews reviews={props.home.reviews} />
-        <Main courses={props.home.courses} />
-        <Register steps={props.home.steps} />
-        <About about={props.home.about} />
-        <Courses learning={props.home.learning} />
-        <Stem stem={props.home.stem} />
-        <Features wwo={props.home.wwo} stem={props.home.stem_feat} />
-        <Team staff={props.home.staff} />
-        <VideoReviews reviews={props.home.video_reviews} />
-        <News news={props.home.news} />
-        <Schools schools={props.home.schools} />
+        {props.error && <h3>{props.error}</h3>}
 
+        {props.home && <Hero heroPost={props.home.hero} />}
+        {props.home && <Statistics statsPost={props.home.statistics} />}
+        {props.home && <Reviews reviews={props.home.reviews} />}
+        {props.home && <Main courses={props.home.courses} />}
+        {props.home && <Register steps={props.home.steps} />}
+        {props.home && <About about={props.home.about} />}
+        {props.home && <Courses learning={props.home.learning} />}
+        {props.home && <Stem stem={props.home.stem} />}
+        {props.home && <Features wwo={props.home.wwo} stem={props.home.stem_feat} />}
+        {props.home && <Team staff={props.home.staff} />}
+        {props.home && <VideoReviews reviews={props.home.video_reviews} />}
+        {props.home && <News news={props.home.news} />}
+        {props.home && <Schools schools={props.home.schools} />}
         <Footer />
       </NoSsr>
 
@@ -131,23 +132,39 @@ export async function getStaticProps() {
     return r.text();
   });
   let home;
+  let error = false;
+  console.log("CWD=", process.cwd());
+  console.log("Local file?", process.env.LOCAL_FILE);
   if (process.env.LOCAL_FILE) {
+    try {
+      home = fs.readFileSync(process.cwd() + "/public/test.json")?.toString() || [];
+      home = JSON.parse(home);
+    } catch (err) {
+      error = true;
+      home = JSON.stringify({ message: "Local File not found" });
+    }
+  } else {
     home = await fetch("https://www.myvirtualschool.com/wp-json/wp/v2/home_page")
       .then(function (r) {
         return r.json();
       })
       .catch(function (err) {
-        return JSON.stringify(err);
-      });
-  } else {
-    home = await fetch("http://localhost:3000/test.json")
-      .then(function (r) {
-        return r.json();
-      })
-      .catch(function (err) {
+        error = true;
         return JSON.stringify(err);
       });
   }
+
+  if (error) {
+    return {
+      props: {
+        header: {
+          html: header,
+        },
+        error: home,
+      },
+    };
+  }
+
   const homeData = home[0];
 
   return {
