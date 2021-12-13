@@ -7,21 +7,11 @@ const Footer = (props) => {
 
   useEffect(() => {
     async function fetchData() {
-      const footerData = await axios("http://localhost:3000/api/footer");
+      const footerData = await axios("/api/footer");
       setFooterData(footerData.data);
     }
     fetchData();
   }, []);
-
-  {
-    /* <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/footer.css" /> */
-  }
-  {
-    /* <link
-          rel="stylesheet"
-          href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/footer-desktop.css"
-        /> */
-  }
 
   return <div id="footer" dangerouslySetInnerHTML={{ __html: footerData }}></div>;
 };
