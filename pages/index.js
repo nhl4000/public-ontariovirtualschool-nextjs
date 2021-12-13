@@ -20,6 +20,7 @@ import Schools from "../components/Schools";
 import Footer from "../components/Footer";
 import Container from "../components/common/Container";
 import Script from "next/script";
+import { NoSsr } from "@material-ui/core";
 
 import { ChatSupport, Schema, TagManager, Pixel, Tracking } from "../components/Head";
 
@@ -46,8 +47,8 @@ export default function Home(props) {
 
         <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/header.css" />
         {/* <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/home.css" /> */}
-        <script src="/js/script.js"></script>
-
+        {/* <script src="/js/script.js"></script> */}
+        <script dangerouslySetInnerHTML={{ __html: process.env.homeScript }}></script>
         <link
           media="all"
           href="https://www.ontariovirtualschool.ca/wp-content/cache/autoptimize/1/css/autoptimize_2eaaffd29108dad07265b36e56d19236.css"
@@ -94,28 +95,30 @@ export default function Home(props) {
         />
       </Head>
 
-      <TagManager />
-      <Pixel />
-      <Tracking />
-      <ChatSupport />
+      <NoSsr>
+        <TagManager />
+        <Pixel />
+        <Tracking />
+        <ChatSupport />
 
-      <Header data={props.header.html} />
+        <Header data={props.header.html} />
 
-      <Hero heroPost={props.home.hero} />
-      <Statistics statsPost={props.home.statistics} />
-      <Reviews reviews={props.home.reviews} />
-      <Main courses={props.home.courses} />
-      <Register steps={props.home.steps} />
-      <About about={props.home.about} />
-      <Courses learning={props.home.learning} />
-      <Stem stem={props.home.stem} />
-      <Features wwo={props.home.wwo} stem={props.home.stem_feat} />
-      <Team staff={props.home.staff} />
-      <VideoReviews reviews={props.home.video_reviews} />
-      <News news={props.home.news} />
-      <Schools schools={props.home.schools} />
+        <Hero heroPost={props.home.hero} />
+        <Statistics statsPost={props.home.statistics} />
+        <Reviews reviews={props.home.reviews} />
+        <Main courses={props.home.courses} />
+        <Register steps={props.home.steps} />
+        <About about={props.home.about} />
+        <Courses learning={props.home.learning} />
+        <Stem stem={props.home.stem} />
+        <Features wwo={props.home.wwo} stem={props.home.stem_feat} />
+        <Team staff={props.home.staff} />
+        <VideoReviews reviews={props.home.video_reviews} />
+        <News news={props.home.news} />
+        <Schools schools={props.home.schools} />
 
-      <Footer />
+        <Footer />
+      </NoSsr>
 
       {/* <a id="top-button" aria-label="Back to Top" title="back to top" onClick={() => window.scrollTo(0, 0)}></a> */}
     </div>
@@ -127,11 +130,25 @@ export async function getStaticProps() {
   const header = await fetch(base_url + "wp-content/cache/1/home/build_header.html").then(function (r) {
     return r.text();
   });
-  // const home = await fetch("https://www.myvirtualschool.com/wp-json/wp/v2/home_page").then(function (r) {
-  const home = await fetch("http://localhost:3000/test.json").then(function (r) {
-    return r.json();
-  });
-  // const homeData = await home.json();
+  let home;
+  if (process.env.LOCAL_FILE) {
+    home = await fetch("https://www.myvirtualschool.com/wp-json/wp/v2/home_page")
+      .then(function (r) {
+        return r.json();
+      })
+      .catch(function (err) {
+        return JSON.stringify(err);
+      });
+  } else {
+    home = await fetch("http://localhost:3000/test.json")
+      .then(function (r) {
+        return r.json();
+      })
+      .catch(function (err) {
+        return JSON.stringify(err);
+      });
+  }
+  const homeData = home[0];
 
   return {
     props: {
@@ -139,20 +156,20 @@ export async function getStaticProps() {
         html: header,
       },
       home: {
-        hero: home[0]["home_hero"][0],
-        statistics: home[0]["home_statistics"],
-        reviews: home[0]["home_featured"],
-        courses: home[0]["home_our_courses"],
-        steps: home[0]["home_reg_steps"],
-        about: home[0]["home_about"],
-        learning: home[0]["home_learning"],
-        stem: home[0]["home_stem"],
-        wwo: home[0]["home_wwo"],
-        stem_feat: home[0]["home_stem_feat"],
-        staff: home[0]["home_staff"],
-        video_reviews: home[0]["home_vid_rev"],
-        news: home[0]["home_news"],
-        schools: home[0]["home_gcl"],
+        hero: homeData["home_hero"][0],
+        statistics: homeData["home_statistics"],
+        reviews: homeData["home_featured"],
+        courses: homeData["home_our_courses"],
+        steps: homeData["home_reg_steps"],
+        about: homeData["home_about"],
+        learning: homeData["home_learning"],
+        stem: homeData["home_stem"],
+        wwo: homeData["home_wwo"],
+        stem_feat: homeData["home_stem_feat"],
+        staff: homeData["home_staff"],
+        video_reviews: homeData["home_vid_rev"],
+        news: homeData["home_news"],
+        schools: homeData["home_gcl"],
       },
     },
     //   //revalidate: 10, // Next.js will attempt to re-generate the page: When a request comes in, at most once every 10 seconds

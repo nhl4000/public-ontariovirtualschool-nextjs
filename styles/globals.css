@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../public/fonts/icomoon.woff") format("woff");
+  src: url("/fonts/icomoon.woff") format("woff");
 }
 
 @font-face {
   font-family: "ovsicon";
-  src: url("../public/fonts/ovsicon.woff") format("woff");
+  src: url("/fonts/ovsicon.woff") format("woff");
 }
 
 :root {

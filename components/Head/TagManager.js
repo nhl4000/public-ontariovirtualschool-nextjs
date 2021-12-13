@@ -20,7 +20,8 @@ export function TagManager() {
             setTimeout("gtag('event', 'No Bounce', {'event_category' : 'Adjusted Bounce' })",3e4);`,
         }}
       />
-      <script
+      <Script
+        id="gtm-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -30,7 +31,8 @@ export function TagManager() {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer', '${google_gtm_id}');
     `,
-        }}></script>
+        }}
+      />
     </>
   );
 }

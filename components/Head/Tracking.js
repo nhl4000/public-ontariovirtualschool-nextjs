@@ -8,6 +8,7 @@ export function Tracking() {
       <Script src="https://www.clickcease.com/monitor/stat.js" />
       <noscript>
         <a href="https://www.clickcease.com" rel="nofollow">
+          {/* eslint-disable @next/next/no-img-element */}
           <img src="https://monitor.clickcease.com/stats/stats.aspx" alt="ClickCease" />
         </a>
       </noscript>

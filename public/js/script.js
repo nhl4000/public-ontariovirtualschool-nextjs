@@ -106,8 +106,6 @@ window.addEventListener("load", function () {
     let desktop_menu_items = desktop_menu.querySelectorAll("ul.nav-main-menu li.mega-menu > a");
     let desktop_menu_wrapper = document.getElementById("menu-wrapper");
     window.addEventListener("click", function (e) {
-      //alert('asd');
-
       if (!desktop_menu.contains(e.target)) {
         let elems = document.querySelectorAll(".active-menu");
         [].forEach.call(elems, function (el) {
@@ -189,36 +187,7 @@ window.addEventListener("load", function () {
       document.body.classList.add("lock-scroll");
     }
 
-    /* let elems = document.querySelectorAll(".active");
-        [].forEach.call(elems, function(el) {
-            el.classList.remove("active-menu");
-        });*/
-
     return false;
-  }
-
-  /* if (overlay) {
-        let menu_items = overlay.querySelectorAll("ul.nav-main-menu li.menu-item-has-children a");
-        if (menu_items) {
-            for (let i = 0; i < menu_items.length; i++) {
-                menu_items[i].addEventListener("click", function (event) {
-                    this.classList.toggle('open');
-                    let submenu = this.nextElementSibling;
-                    submenu.classList.toggle('open');
-                    event.preventDefault();
-                });
-            }
-        }
-    }*/
-
-  //on screen size changes hide mobile menu if open
-  window.addEventListener("resize", menu_resize);
-  function menu_resize() {
-    if (overlay?.classList.contains("open")) {
-      /*  overlay.classList.remove('open');
-            menu.classList.remove('open');
-            document.body.classList.remove('lock-scroll');*/
-    }
   }
 
   // Back to top
@@ -266,25 +235,3 @@ window.addEventListener("load", function () {
   }
   document.body.classList.remove("preload");
 });
-
-/* TODO: move to only FAQ and Course page */
-/*accordion function for FAQ and Courses page*/
-function ovs_accordion(element_class) {
-  const accordion_items = document.querySelectorAll("." + element_class);
-  for (let i = 0; i < accordion_items.length; i++) {
-    accordion_items[i].addEventListener("click", function (event) {
-      this.classList.toggle("open");
-      let x = this.getAttribute("aria-expanded");
-      if (x === "true") {
-        x = "false";
-      } else {
-        x = "true";
-      }
-      this.setAttribute("aria-expanded", x);
-
-      let accordion_body = this.nextElementSibling;
-      accordion_body.classList.toggle("open");
-      event.preventDefault();
-    });
-  }
-}
