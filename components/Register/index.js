@@ -16,6 +16,7 @@ import TouchAppIcon from "@material-ui/icons/TouchApp";
 import BorderColorIcon from "@material-ui/icons/BorderColor";
 //import PostAddIcon from '@material-ui/icons/PostAdd';
 import DescriptionIcon from "@material-ui/icons/Description";
+import Container from "../common/Container";
 
 // TODO:
 // import "./Register.css";
@@ -23,121 +24,127 @@ import DescriptionIcon from "@material-ui/icons/Description";
 const Register = (props) => {
   const [steps, setSteps] = useState(props.steps);
 
-  return (
-    <Grid container spacing={4}>
-      <Grid item xs={12}>
-        <Typography variant="h5" style={{ color: "#8e0000", fontWeight: 700 }} align="center">
-          REGISTRATION IS EASY
-        </Typography>
+  // useEffect(() => setSteps(steps.reverse()), []);
 
-        <Timeline className="vertList">
-          {steps.map((step, index) => (
-            <TimelineItem key={index} data-aos="fade" data-aos-delay="300" data-aos-easing="linear">
-              <TimelineSeparator>
-                <TimelineDot style={{ backgroundColor: "#aa0303" }}>
-                  {(() => {
+  return (
+    <Box>
+      <Container>
+        <Grid container spacing={4}>
+          <Grid item xs={12}>
+            <Typography variant="h5" style={{ color: "#8e0000", fontWeight: 700 }} align="center">
+              REGISTRATION IS EASY
+            </Typography>
+
+            <Timeline className="vertList">
+              {[...steps].reverse().map((step, index) => (
+                <TimelineItem key={index} data-aos="fade" data-aos-delay="300" data-aos-easing="linear">
+                  <TimelineSeparator>
+                    <TimelineDot style={{ backgroundColor: "#aa0303" }}>
+                      {(() => {
+                        switch (index) {
+                          case 0:
+                            return <TouchAppIcon style={{ color: "#fff" }} />;
+                          case 1:
+                            return <BorderColorIcon style={{ color: "#fff" }} />;
+                          case 2:
+                            return <DescriptionIcon style={{ color: "#fff" }} />;
+                        }
+                      })()}
+                    </TimelineDot>
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent style={{ marginTop: "1em" }}>
+                    <span className="steps">{step.title.rendered}</span>
+                    <br />
+                    {step.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+                  </TimelineContent>
+                </TimelineItem>
+              ))}
+            </Timeline>
+
+            <Box margin={5} display={"flex"} className="horzList" suppressHydrationWarning>
+              <div id="timeline-wrap">
+                <div id="timeline"></div>
+                {[...steps].reverse().map((step, index) =>
+                  (() => {
                     switch (index) {
                       case 0:
-                        return <TouchAppIcon style={{ color: "#fff" }} />;
+                        return (
+                          <div
+                            key={index}
+                            className="marker mfirst timeline-icon one"
+                            data-aos="fade"
+                            data-aos-delay="10"
+                            data-aos-easing="linear">
+                            <TouchAppIcon style={{ color: "#fff" }} />
+                            <Typography color="textSecondary">
+                              <strong>{step.title.rendered}</strong>
+                              <br />
+                              {step.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+                            </Typography>
+                          </div>
+                        );
                       case 1:
-                        return <BorderColorIcon style={{ color: "#fff" }} />;
+                        return (
+                          <div
+                            key={index}
+                            className="marker m2 timeline-icon two"
+                            data-aos="fade"
+                            data-aos-delay="1000"
+                            data-aos-easing="linear">
+                            <BorderColorIcon style={{ color: "#fff" }} />
+                            <Typography color="textSecondary">
+                              <strong>{step.title.rendered}</strong>
+                              <br />
+                              {step.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+                            </Typography>
+                          </div>
+                        );
                       case 2:
-                        return <DescriptionIcon style={{ color: "#fff" }} />;
+                        return (
+                          <div
+                            key={index}
+                            className="marker mlast timeline-icon three"
+                            data-aos="fade"
+                            data-aos-delay="2000"
+                            data-aos-easing="linear">
+                            <DescriptionIcon style={{ color: "#fff" }} />
+                            <Typography color="textSecondary">
+                              <strong>{step.title.rendered}</strong>
+                              <br />
+                              {step.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+                            </Typography>
+                          </div>
+                        );
                     }
-                  })()}
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent style={{ marginTop: "1em" }}>
-                <span className="steps">{step.title.rendered}</span>
+                  })()
+                )}
+              </div>
+            </Box>
+            <Box xs={12} style={{ textAlign: "center" }} suppressHydrationWarning>
+              <Typography
+                color="textSecondary"
+                className="leftText"
+                style={{ fontSize: "1.5em", fontWeight: "700", marginBottom: "20px" }}>
+                Do you have an academic or pathway question?
                 <br />
-                {step.content.rendered.replace(/(<([^>]+)>)/gi, "")}
-              </TimelineContent>
-            </TimelineItem>
-          ))}
-        </Timeline>
-
-        <Box margin={5} display={"flex"} className="horzList" suppressHydrationWarning>
-          <div id="timeline-wrap">
-            <div id="timeline"></div>
-            {steps.map((step, index) =>
-              (() => {
-                switch (index) {
-                  case 0:
-                    return (
-                      <div
-                        key={index}
-                        className="marker mfirst timeline-icon one"
-                        data-aos="fade"
-                        data-aos-delay="10"
-                        data-aos-easing="linear">
-                        <TouchAppIcon style={{ color: "#fff" }} />
-                        <Typography color="textSecondary">
-                          <strong>{step.title.rendered}</strong>
-                          <br />
-                          {step.content.rendered.replace(/(<([^>]+)>)/gi, "")}
-                        </Typography>
-                      </div>
-                    );
-                  case 1:
-                    return (
-                      <div
-                        key={index}
-                        className="marker m2 timeline-icon two"
-                        data-aos="fade"
-                        data-aos-delay="1000"
-                        data-aos-easing="linear">
-                        <BorderColorIcon style={{ color: "#fff" }} />
-                        <Typography color="textSecondary">
-                          <strong>{step.title.rendered}</strong>
-                          <br />
-                          {step.content.rendered.replace(/(<([^>]+)>)/gi, "")}
-                        </Typography>
-                      </div>
-                    );
-                  case 2:
-                    return (
-                      <div
-                        key={index}
-                        className="marker mlast timeline-icon three"
-                        data-aos="fade"
-                        data-aos-delay="2000"
-                        data-aos-easing="linear">
-                        <DescriptionIcon style={{ color: "#fff" }} />
-                        <Typography color="textSecondary">
-                          <strong>{step.title.rendered}</strong>
-                          <br />
-                          {step.content.rendered.replace(/(<([^>]+)>)/gi, "")}
-                        </Typography>
-                      </div>
-                    );
-                }
-              })()
-            )}
-          </div>
-        </Box>
-        <Box xs={12} style={{ textAlign: "center" }} suppressHydrationWarning>
-          <Typography
-            color="textSecondary"
-            className="leftText"
-            style={{ fontSize: "1.5em", fontWeight: "700", marginBottom: "20px" }}>
-            Do you have an academic or pathway question?
-            <br />
-            Our Guidance Counsellors are here to help you!
-          </Typography>
-          <Button
-            component={"a"}
-            href={"#"}
-            target={"_blank"}
-            variant="contained"
-            color="primary"
-            size="large"
-            fullWidth={true}>
-            SCHEDULE A COUNSELLING APPOINTMENT
-          </Button>
-        </Box>
-      </Grid>
-    </Grid>
+                Our Guidance Counsellors are here to help you!
+              </Typography>
+              <Button
+                component={"a"}
+                href={"#"}
+                target={"_blank"}
+                variant="contained"
+                color="primary"
+                size="large"
+                fullWidth={true}>
+                SCHEDULE A COUNSELLING APPOINTMENT
+              </Button>
+            </Box>
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
   );
 };
 

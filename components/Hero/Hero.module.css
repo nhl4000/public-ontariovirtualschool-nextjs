@@ -1,11 +1,18 @@
 .HeroImg .HeroPlay {
-  position: relative;
+  position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 5rem;
   color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
+}
+.posterImg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 .css-11gv7qo-MuiInputBase-root-MuiOutlinedInput-root,
 .css-a1kv6i-MuiInputBase-root-MuiOutlinedInput-root {
@@ -17,15 +24,16 @@
 }
 .HeroImg {
   position: relative;
-  top: -150px;
+  top: 0;
+  /* top: -100px; */
 }
-.HeroImg
-  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.e1de0imv0.css-bhp9pd-MuiPaper-root-MuiCard-root.e1de0imv0 {
+.HeroImg > div:first-child {
   position: absolute;
-  top: 100px;
+  /* top: 100px; */
   height: 110%;
   width: 100%;
   z-index: 10;
+  box-shadow: none;
 }
 .HeroImg .css-1okhp2l-MuiPaper-root-MuiCard-root {
   position: absolute;

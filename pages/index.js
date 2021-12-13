@@ -1,8 +1,7 @@
 import React from "react";
 import { useTheme } from "@material-ui/core/styles";
-import Box from "@mui/material/Box";
+
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -11,110 +10,125 @@ import Reviews from "../components/Reviews";
 import Main from "../components/Main";
 import Register from "../components/Register";
 import About from "../components/About";
+import Courses from "../components/Courses";
+import Stem from "../components/Stem";
+import Features from "../components/Features";
+import Team from "../components/Team";
+import VideoReviews from "../components/VideoReviews";
+import News from "../components/News";
+import Schools from "../components/Schools";
 import Footer from "../components/Footer";
 import Container from "../components/common/Container";
+import Script from "next/script";
+
+import { ChatSupport, Schema, TagManager, Pixel, Tracking } from "../components/Head";
 
 export default function Home(props) {
-  let homeHero = props.home[0]["home_hero"][0];
-  let homeStatistics = props.home[0]["home_statistics"];
-  let homeReviews = props.home[0]["home_featured"];
-  let homeCourses = props.home[0]["home_our_courses"];
-  let homeSteps = props.home[0]["home_reg_steps"];
-  let homeAbout = props.home[0]["home_about"];
-  let homeLearning = props.home[0]["home_learning"];
-  let homeSteam = props.home[0]["home_steam"];
-
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="theme-color" content="#a61919" />
+        <meta name="msapplication-navbutton-color" content="#a61919" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#a61919" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+        <Schema />
+
         <title>Ontario Virtual School | OSSD Online Courses | Online School Ontario</title>
         <meta
           name="description"
           content="Ontario Virtual School (OVS) is an accredited private online school offering grade 7-12 online courses. 11 years in service with over 25,000 successful OSSD (Ontario Secondary School Diploma) credits issued. Signup today and Learn at your own pace."
         />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/images/favicon.png" />
 
-        {/* <link rel="preload" href="/fonts/icomoon.woff" as="font" type="font/woff" /> */}
-        {/* <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/header.css" /> */}
-        {/* <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/footer.css" /> */}
-        {/* <link
-          rel="stylesheet"
-          href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/footer-desktop.css"
-        /> */}
+        <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/header.css" />
         {/* <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/home.css" /> */}
-        {/* <script>let no_header = false;</script> */}
-        {/* <script src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/js/script.js"></script> */}
-        {/* <script>const menu_resize = function() \{console.log("function redefined")};</script> */}
+        <script src="/js/script.js"></script>
+
+        <link
+          media="all"
+          href="https://www.ontariovirtualschool.ca/wp-content/cache/autoptimize/1/css/autoptimize_2eaaffd29108dad07265b36e56d19236.css"
+          rel="stylesheet"
+        />
+        <link
+          media="(min-width: 48em)"
+          href="https://www.ontariovirtualschool.ca/wp-content/cache/autoptimize/1/css/autoptimize_649e5bcabacc8df0fa2f55e5427b5a4a.css"
+          rel="stylesheet"
+        />
+        <title>Ontario Virtual School | OSSD Online Courses | Online School Ontario</title>
+        <meta
+          name="description"
+          content="Ontario Virtual School (OVS) is an accredited private online school offering grade 7-12 online courses. 11 years in service with over 25,000 successful OSSD (Ontario Secondary School Diploma) credits issued. Signup today and Learn at your own pace."
+        />
+        <link rel="canonical" href="https://www.ontariovirtualschool.ca/" />
+
+        <link
+          rel="shortcut icon"
+          href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/icons/favicon/favicon.png"
+        />
+        <link
+          rel="shortcut icon"
+          href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/icons/favicon/favicon.ico"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/icons/favicon/apple-touch-icon-iphone-60x60.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="60x60"
+          href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/icons/favicon/apple-touch-icon-ipad-76x76.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/icons/favicon/apple-touch-icon-iphone-retina-120x120.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/icons/favicon/apple-touch-icon-ipad-retina-152x152.png"
+        />
       </Head>
 
-      {/* <Header data={props.header.html} /> */}
+      <TagManager />
+      <Pixel />
+      <Tracking />
+      <ChatSupport />
 
-      {/* Hero */}
-      <Box backgroundColor={"#f1f1f1"} padding={6}>
-        <Hero heroPost={homeHero} />
-      </Box>
+      <Header data={props.header.html} />
 
-      {/* Stats */}
-      <Box backgroundColor={"#ffffff"} padding={6}>
-        <Statistics statsPost={homeStatistics} />
-      </Box>
+      <Hero heroPost={props.home.hero} />
+      <Statistics statsPost={props.home.statistics} />
+      <Reviews reviews={props.home.reviews} />
+      <Main courses={props.home.courses} />
+      <Register steps={props.home.steps} />
+      <About about={props.home.about} />
+      <Courses learning={props.home.learning} />
+      <Stem stem={props.home.stem} />
+      <Features wwo={props.home.wwo} stem={props.home.stem_feat} />
+      <Team staff={props.home.staff} />
+      <VideoReviews reviews={props.home.video_reviews} />
+      <News news={props.home.news} />
+      <Schools schools={props.home.schools} />
 
-      {/* Reviews */}
-      <Container>
-        <Reviews reviews={homeReviews} />
-      </Container>
+      <Footer />
 
-      <Box>
-        <Container>
-          <Main courses={homeCourses} />
-        </Container>
-
-        <Container>
-          <Register steps={homeSteps} />
-        </Container>
-      </Box>
-
-      <Container>
-        <About about={homeAbout} />
-      </Container>
-
-      {/* <Container>
-        <Courses />
-      </Container>
-      <Container>
-        <Stem />
-      </Container>
-      <Container>
-        <Features />
-      </Container>
-      <Box bgcolor={theme.palette.alternate.main}>
-        <Container>
-          <Team />
-        </Container>
-        <Container id="videoreviews">
-          <Videoreviews />
-        </Container>
-        <Container>
-          <News />
-        </Container>
-      </Box>
-      <Container>
-        <Schools />
-      </Container> */}
-
-      {/* <Footer /> */}
-      {/* <div dangerouslySetInnerHTML={{ __html: props.footer.html }} /> */}
+      {/* <a id="top-button" aria-label="Back to Top" title="back to top" onClick={() => window.scrollTo(0, 0)}></a> */}
     </div>
   );
 }
 
 export async function getStaticProps() {
-  // Get external data from the file system, API, DB, etc.
   const base_url = "https://www.ontariovirtualschool.ca/";
   const header = await fetch(base_url + "wp-content/cache/1/home/build_header.html").then(function (r) {
     return r.text();
   });
-  const home = await fetch("https://www.myvirtualschool.com/wp-json/wp/v2/home_page").then(function (r) {
+  // const home = await fetch("https://www.myvirtualschool.com/wp-json/wp/v2/home_page").then(function (r) {
+  const home = await fetch("http://localhost:3000/test.json").then(function (r) {
     return r.json();
   });
   // const homeData = await home.json();
@@ -124,8 +138,23 @@ export async function getStaticProps() {
       header: {
         html: header,
       },
-      home: home,
+      home: {
+        hero: home[0]["home_hero"][0],
+        statistics: home[0]["home_statistics"],
+        reviews: home[0]["home_featured"],
+        courses: home[0]["home_our_courses"],
+        steps: home[0]["home_reg_steps"],
+        about: home[0]["home_about"],
+        learning: home[0]["home_learning"],
+        stem: home[0]["home_stem"],
+        wwo: home[0]["home_wwo"],
+        stem_feat: home[0]["home_stem_feat"],
+        staff: home[0]["home_staff"],
+        video_reviews: home[0]["home_vid_rev"],
+        news: home[0]["home_news"],
+        schools: home[0]["home_gcl"],
+      },
     },
-    //revalidate: 10, // Next.js will attempt to re-generate the page: When a request comes in, at most once every 10 seconds
+    //   //revalidate: 10, // Next.js will attempt to re-generate the page: When a request comes in, at most once every 10 seconds
   };
 }

@@ -1,0 +1,12 @@
+.MuiAvatar-circular {
+  width: 80px;
+  height: auto;
+  margin: 10px auto;
+}
+.video2 {
+  margin-bottom: 32px !important;
+}
+.video2 .css-1okhp2l-MuiPaper-root-MuiCard-root {
+  height: 100% !important;
+  box-shadow: none !important;
+}

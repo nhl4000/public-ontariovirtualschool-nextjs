@@ -30,11 +30,8 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <link rel="shortcut icon" type="image/png" href="../static/favicon.ico" />
-          <style>{`body { margin: 0 } /* custom! */`}</style>
-        </Head>
-        <body className="custom_class">
+        <Head>{/* <style>{`body { margin: 0 }`}</style> */}</Head>
+        <body>
           <Main />
           <NextScript />
         </body>

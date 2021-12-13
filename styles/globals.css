@@ -1,11 +1,44 @@
 @import url(//fonts.googleapis.com/css?family=Lato|Oswald);
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../public/fonts/icomoon.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ovsicon";
+  src: url("../public/fonts/ovsicon.woff") format("woff");
+}
+
+:root {
+  --easing-normal: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+}
+
 html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  padding: 0;
+  border: 0;
+  font-family: "Lato", sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif; */
+}
+
+body {
+  line-height: 1;
+}
+
+p,
+li,
+strong,
+body {
+  font-size: 1.2rem;
 }
 
 a {
@@ -19,6 +52,11 @@ a {
 
 ul {
   padding-left: 0;
+}
+
+#menu > div ul.nav-main-menu {
+  padding: 0;
+  margin: 0;
 }
 
 .react-multiple-carousel__arrow--left {

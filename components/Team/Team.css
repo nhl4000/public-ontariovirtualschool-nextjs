@@ -1,0 +1,6 @@
+.TeamSlider .react-multi-carousel-item {
+  left: 40px;
+}
+.TeamSlider .react-multi-carousel-item .MuiGrid-item {
+  margin: 10px;
+}

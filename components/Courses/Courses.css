@@ -1,0 +1,36 @@
+.css-btxg90-MuiPaper-root-MuiCard-root {
+  width: 100% !important;
+  height: 500px !important;
+}
+.css-btxg90-MuiPaper-root-MuiCard-root .css-1db00g2,
+.css-btxg90-MuiPaper-root-MuiCard-root .css-1okhp2l-MuiPaper-root-MuiCard-root,
+.css-btxg90-MuiPaper-root-MuiCard-root .css-1lt5qva-MuiCardContent-root {
+  height: 100% !important;
+}
+
+.css-1fh1iv-MuiPaper-root-MuiCard-root .css-1lt5qva-MuiCardContent-root {
+  height: 350px !important;
+}
+.css-1fh1iv-MuiPaper-root-MuiCard-root .css-1db00g2 {
+  height: 100% !important;
+}
+@media screen and (max-width: 1023px) {
+  .css-btxg90-MuiPaper-root-MuiCard-root {
+    height: 450px !important;
+  }
+  .css-1fh1iv-MuiPaper-root-MuiCard-root .css-1lt5qva-MuiCardContent-root {
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .css-btxg90-MuiPaper-root-MuiCard-root {
+    height: 300px !important;
+  }
+  .css-1fh1iv-MuiPaper-root-MuiCard-root .css-1lt5qva-MuiCardContent-root {
+    height: 150px !important;
+  }
+  .css-1okhp2l-MuiPaper-root-MuiCard-root {
+    height: 97% !important;
+  }
+}
