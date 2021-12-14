@@ -14,7 +14,7 @@ import "../components/VideoReviews/VideoReviews.css";
 import "../components/News/News.css";
 import "../components/Schools/Schools.css";
 import "../components/Footer/Footer.css";
-
+import "aos/dist/aos.css";
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
