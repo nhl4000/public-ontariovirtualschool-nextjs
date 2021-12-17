@@ -8,6 +8,10 @@
 
 ## Commands
 
+`yarn install`
+
+- installs all the project dependencies
+
 `yarn dev`
 
 - Runs `next dev'
