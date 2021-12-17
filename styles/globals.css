@@ -77,3 +77,7 @@ ul {
     font-size: 15px;
   }
 }
+
+.MuiPaper-elevation1.MuiPaper-elevation1 {
+  box-shadow: none;
+}

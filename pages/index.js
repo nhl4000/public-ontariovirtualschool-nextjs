@@ -45,11 +45,11 @@ export default function Home(props) {
           content="Ontario Virtual School (OVS) is an accredited private online school offering grade 7-12 online courses. 11 years in service with over 25,000 successful OSSD (Ontario Secondary School Diploma) credits issued. Signup today and Learn at your own pace."
         />
         <link rel="icon" href="/images/favicon.png" />
-
         <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/header.css" />
-        {/* <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/home.css" /> */}
+
         {/* <script src="/js/script.js"></script> */}
         <script dangerouslySetInnerHTML={{ __html: process.env.homeScript }}></script>
+
         <link
           media="all"
           href="https://www.ontariovirtualschool.ca/wp-content/cache/autoptimize/1/css/autoptimize_2eaaffd29108dad07265b36e56d19236.css"
@@ -60,7 +60,6 @@ export default function Home(props) {
           href="https://www.ontariovirtualschool.ca/wp-content/cache/autoptimize/1/css/autoptimize_649e5bcabacc8df0fa2f55e5427b5a4a.css"
           rel="stylesheet"
         />
-        <title>Ontario Virtual School | OSSD Online Courses | Online School Ontario</title>
         <meta
           name="description"
           content="Ontario Virtual School (OVS) is an accredited private online school offering grade 7-12 online courses. 11 years in service with over 25,000 successful OSSD (Ontario Secondary School Diploma) credits issued. Signup today and Learn at your own pace."
@@ -121,7 +120,7 @@ export default function Home(props) {
         <Footer />
       </NoSsr>
 
-      {/* <a id="top-button" aria-label="Back to Top" title="back to top" onClick={() => window.scrollTo(0, 0)}></a> */}
+      <a id="top-button" aria-label="Back to Top" title="back to top" onClick={() => window.scrollTo(0, 0)}></a>
     </div>
   );
 }
@@ -133,8 +132,6 @@ export async function getStaticProps() {
   });
   let home;
   let error = false;
-  console.log("CWD=", process.cwd());
-  console.log("Local file?", process.env.LOCAL_FILE);
   if (process.env.LOCAL_FILE) {
     try {
       home = fs.readFileSync(process.cwd() + "/public/test.json")?.toString() || [];

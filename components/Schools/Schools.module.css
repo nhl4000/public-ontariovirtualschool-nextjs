@@ -1,0 +1,26 @@
+.schoollImg {
+  filter: grayscale(100%);
+  transition: ease-in;
+}
+.schoollImg:hover {
+  filter: grayscale(0%);
+}
+.schoollImg {
+  background-size: contain !important;
+}
+
+.MobSlider {
+  display: none !important;
+}
+
+@media screen and (max-width: 500px) {
+  .MobSlider {
+    display: flex !important;
+  }
+  .DeskSlider {
+    display: none !important;
+  }
+  .leftText {
+    text-align: left !important;
+  }
+}

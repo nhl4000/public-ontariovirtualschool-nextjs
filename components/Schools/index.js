@@ -11,6 +11,10 @@ import Button from "@material-ui/core/Button";
 import "react-multi-carousel/lib/styles.css";
 import { Container } from "@material-ui/core";
 
+// This is included to replace the global css file for this component within /pages/_app.js
+import styles from "./Schools.module.css";
+// To use: Set components/elements className
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -50,7 +54,7 @@ export default function Schools(props) {
           </Typography>
         </Box>
         <Carousel
-          className="DeskSlider"
+          className={styles.DeskSlider}
           responsive={responsive}
           arrows={0}
           autoPlay
@@ -82,7 +86,7 @@ export default function Schools(props) {
                   borderRadius={0}
                   boxShadow={"none"}>
                   <CardMedia
-                    className="schoollImg"
+                    className={styles.schoollImg}
                     image={school.yoast_head_json.og_image[0].url}
                     style={{
                       height: 100,
@@ -98,7 +102,7 @@ export default function Schools(props) {
             </Grid>
           ))}
         </Carousel>
-        <Box className="MobSlider">
+        <Box className={styles.MobSlider}>
           <Carousel
             responsive={responsive}
             arrows={0}
@@ -151,7 +155,7 @@ export default function Schools(props) {
         <Box xs={12} style={{ textAlign: "center" }} marginTop={2}>
           <Typography
             color="textSecondary"
-            className="leftText"
+            className={styles.leftText}
             style={{ fontSize: "1.5em", fontWeight: "700", marginBottom: "20px" }}>
             Do you have an academic or pathway question?
             <br />
