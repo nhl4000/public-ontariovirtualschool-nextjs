@@ -37,7 +37,12 @@
     display: none !important;
   }
   .SearchMargin {
-    margin-bottom: 10px;
+    border: 1px solid #dddddd !important;
+    border-radius: 25px !important;
+    margin-bottom: 10px !important;
+  }
+  .SearchMargin .MuiInput-underline:before{
+    border: none !important;
   }
   .boxBtnSearch {
     display: block !important;

@@ -88,7 +88,7 @@ const Features = (props) => {
                         shadow="0"
                         image="https://player.vimeo.com/video/307150905?title=0&byline=0&portrait=0&color=ffffff&autoplay=0&dnt=0&muted=1&loop=1&autopause=0"
                         title="Ontatio Virtual Schoool"
-                        // autoPlay
+                      // autoPlay
                       />
                     </Card>
                   </Grid>
@@ -104,19 +104,20 @@ const Features = (props) => {
                 <Box component={Card} padding={4} borderRadius={4} width={"100%"} height={"100%"} data-aos={"fade-up"}>
                   <Box display={"flex"} flexDirection={"column"}>
                     <Box margin={"auto"} marginBottom={2} justifySelf={"center"} borderRadius={25}>
-                      <Avatar src={ficon.yoast_head_json.og_image[0].url} />
+                      <Avatar src={ficon.yoast_head_json.og_image[0].url} style={{ width: "80px", height: "80px" }} />
                     </Box>
                     <Typography
                       component={Typography}
                       variant={"h6"}
                       gutterBottom
-                      style={{ fontWeight: 500 }}
+                      style={{ fontWeight: 500, textAlign: "center" }}
                       dangerouslySetInnerHTML={{ __html: ficon.title.rendered }}
                     />
 
                     <Typography
                       color="textSecondary"
                       component={"div"}
+                      style={{ textAlign: "center" }}
                       dangerouslySetInnerHTML={{ __html: ficon.content.rendered }}
                     />
                   </Box>

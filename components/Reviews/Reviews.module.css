@@ -7,6 +7,7 @@
 .css-13i4rnv-MuiGrid-root .MuiCard-root.MuiBox-root {
   margin: auto !important;
 }
+
 @media screen and (max-width: 450px) {
   .react-multiple-carousel__arrow {
     min-width: 25px;

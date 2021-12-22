@@ -74,7 +74,7 @@ const Team = (props) => {
                   <Box component={Card} borderRadius={2}>
                     <CardContent>
                       <Typography dangerouslySetInnerHTML={{ __html: team.title.rendered }} />
-                      <Typography fontSize={12} dangerouslySetInnerHTML={{ __html: team.content.rendered }} />
+                      <Typography className="subject" dangerouslySetInnerHTML={{ __html: team.content.rendered }} />
                     </CardContent>
                   </Box>
                 </Box>

@@ -77,9 +77,9 @@ const Main = (props) => {
             style={{
               textTransform: "uppercase",
               fontWeight: "medium",
+              color: "#f9b934",
             }}
             gutterBottom
-            color={"secondary"}
             align={"center"}>
             Our Courses
           </Typography>
@@ -673,9 +673,9 @@ const Main = (props) => {
             className="SearchMargin"
             InputProps={{
               endAdornment: (
-                <InputAdornment position="start">
-                  <IconButton style={{ color: "#FFF", backgroundColor: "#aa0303" }}>
-                    <SearchIcon />
+                <InputAdornment >
+                  <IconButton style={{ color: "#FFF", backgroundColor: "#aa0303", height: "40px", width: "40px" }}>
+                    <SearchIcon style={{ height: "30px", width: "30px" }} />
                   </IconButton>
                 </InputAdornment>
               ),
@@ -687,7 +687,7 @@ const Main = (props) => {
             target={"_blank"}
             variant="contained"
             color="primary"
-            size="large"
+            size="medium"
             className="regBtn">
             REGISTER NOW
           </Button>

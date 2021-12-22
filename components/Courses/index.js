@@ -30,9 +30,9 @@ const Courses = (props) => {
                 style={{
                   textTransform: "uppercase",
                   fontWeight: "medium",
+                  color: "#f9b934"
                 }}
                 gutterBottom
-                color={"secondary"}
                 align={"center"}>
                 Courses
               </Typography>
@@ -72,7 +72,7 @@ const Courses = (props) => {
                         width="100%"
                         image={learn.home_learning_video}
                         title="Ontatio Virtual Schoool"
-                        // autoPlay
+                      // autoPlay
                       />
                     </Card>
                   </Box>
@@ -96,7 +96,7 @@ const Courses = (props) => {
                         width="100%"
                         image={learn.home_learning_video}
                         title="Ontario Virtual Schoool"
-                        // autoPlay
+                      // autoPlay
                       />
                     </Card>
                   </Box>

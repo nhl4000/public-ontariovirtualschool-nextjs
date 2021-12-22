@@ -72,7 +72,7 @@ const Statistics = (props) => {
                           <DoneAllIcon
                             fontSize="large"
                             style={{ color: "#f9b934" }}
-                            // className="red-count-up"
+                          // className="red-count-up"
                           />
                         </Box>
                       );
@@ -93,14 +93,14 @@ const Statistics = (props) => {
                           <SchoolIcon
                             fontSize="large"
                             style={{ color: "#f9b934" }}
-                            // className="red-count-up"
+                          // className="red-count-up"
                           />
                         </Box>
                       );
                   }
                 })()}
               </Typography>
-              <Typography align={"center"} variant="h6" gutterBottom>
+              <Typography align={"center"} variant="h6" gutterBottom color={'#3a3a3a'}>
                 {post.title.rendered}
               </Typography>
               <Typography

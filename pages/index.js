@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "@material-ui/core/styles";
-
+import Box from "@material-ui/core/Box";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
@@ -103,25 +103,30 @@ export default function Home(props) {
         <Header data={props.header.html} />
 
         {props.error && <h3>{props.error}</h3>}
-
-        {props.home && <Hero heroPost={props.home.hero} />}
+        <section style={{ backgroundColor: "#f7f9fc" }}>
+          {props.home && <Hero heroPost={props.home.hero} />}
+        </section>
         {props.home && <Statistics statsPost={props.home.statistics} />}
         {props.home && <Reviews reviews={props.home.reviews} />}
-        {props.home && <Main courses={props.home.courses} />}
-        {props.home && <Register steps={props.home.steps} />}
+        <section style={{ backgroundColor: "#f7f9fc" }}>
+          {props.home && <Main courses={props.home.courses} />}
+          {props.home && <Register steps={props.home.steps} />}
+        </section>
         {props.home && <About about={props.home.about} />}
         {props.home && <Courses learning={props.home.learning} />}
         {props.home && <Stem stem={props.home.stem} />}
         {props.home && <Features wwo={props.home.wwo} stem={props.home.stem_feat} />}
-        {props.home && <Team staff={props.home.staff} />}
-        {props.home && <VideoReviews reviews={props.home.video_reviews} />}
+        <section style={{ backgroundColor: "#f7f9fc" }}>
+          {props.home && <Team staff={props.home.staff} />}
+          {props.home && <VideoReviews reviews={props.home.video_reviews} />}
+        </section>
         {props.home && <News news={props.home.news} />}
         {props.home && <Schools schools={props.home.schools} />}
         <Footer />
       </NoSsr>
 
       <a id="top-button" aria-label="Back to Top" title="back to top" onClick={() => window.scrollTo(0, 0)}></a>
-    </div>
+    </div >
   );
 }
 

@@ -43,7 +43,7 @@ const Hero = (props) => {
                 <Typography
                   variant="h2"
                   color="#00000"
-                  style={{ fontWeight: 700 }}
+                  style={{ fontWeight: 700, color: '#3A3A3A' }}
                   dangerouslySetInnerHTML={{
                     __html: props.heroPost.title.rendered,
                   }}
@@ -57,7 +57,7 @@ const Hero = (props) => {
                 <Typography
                   variant="h6"
                   // component="p"
-                  color="#333333"
+                  color="#3a3a3a"
                   marginBottom={3}
                   style={{ fontWeight: 400 }}
                   dangerouslySetInnerHTML={{
@@ -104,7 +104,7 @@ const Hero = (props) => {
                     frameBorder="0"
                     image={play ? null : video}
                     title="Ontario Virtual School"
-                    // autoPlay
+                  // autoPlay
                   />
                 </Card>
                 <PlayCircleFilledOutlinedIcon

@@ -30,9 +30,9 @@ const Stem = (props) => {
                 style={{
                   textTransform: "uppercase",
                   fontWeight: "medium",
+                  color: "#f9b934",
                 }}
                 gutterBottom
-                color={"secondary"}
                 align={"center"}>
                 What we Offer
               </Typography>
@@ -72,7 +72,7 @@ const Stem = (props) => {
                         width="100%"
                         image={stem.home_stem_video}
                         title="Ontatio Virtual Schoool"
-                        // autoPlay
+                      // autoPlay
                       />
                     </Card>
                   </Box>

@@ -6,19 +6,16 @@
   font-size: 5rem;
   color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  z-index: 10;
+
 }
 .posterImg {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
-.css-11gv7qo-MuiInputBase-root-MuiOutlinedInput-root,
-.css-a1kv6i-MuiInputBase-root-MuiOutlinedInput-root {
-  border-radius: 25px !important;
-  width: 100% !important;
-}
+
 .open {
   display: none;
 }
@@ -48,12 +45,14 @@
 }
 .HeroBtn {
   margin-top: 10px !important;
+  background-color: #aa0303 !important;
+  color: #ffffff !important;
 }
 @media screen and (min-width: 450px) {
   .HeroBtn {
     margin-left: 10px !important;
     margin-top: 0 !important;
-    padding: 15px 22px !important;
+    padding: 15px 25px !important;
   }
 }
 @media screen and (max-width: 450px) {
