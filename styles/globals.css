@@ -95,8 +95,9 @@ ul {
 /*End of Hero Styles*/
 
 /*Red button*/
-.MuiBox-root-77 button.MuiButton-contained,
+.jss77 button.MuiButton-contained,
 .MuiButton-containedPrimary, 
+.jss79,
 .redBtn{
   color: #ffffff !important;
   background-color: #aa0303 !important;
@@ -131,31 +132,32 @@ ul {
   left: 10px !important;
   transform: none !important;
 }
-.MuiBox-root-81 p,
-.MuiBox-root-82 p{
+.jss81 p,
+.jss82 p{
   font-size: 0.9rem !important;
 }
 
-.MuiBox-root-78 .MuiButton-containedSecondary{
+.jss78 .MuiButton-containedSecondary{
   margin-right: 10px !important;
 }
 
-.MuiBox-root-90{
+.jss90{
   width: 450px !important;
   height: 400px !important;
 }
 
-.MuiBox-root-91,
-.MuiBox-root-92,
-.MuiBox-root-92 .MuiPaper-rounded,
+.jss91,
+.jss92,
+.jss92 .MuiPaper-rounded,
 .video2 .MuiPaper-rounded,
-.MuiBox-root-102,
-.MuiBox-root-103,
-.MuiBox-root-103 .MuiPaper-rounded{
+.jss101,
+.jss102,
+.jss103,
+.jss103 .MuiPaper-rounded{
   height: 100% !important;
 }
 
-.MuiBox-root-100 .MuiPaper-root{
+.jss100 .MuiPaper-root{
   width: 100% !important;
   height: 400px !important;
 }
