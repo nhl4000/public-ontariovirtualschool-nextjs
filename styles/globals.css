@@ -78,6 +78,7 @@ ul {
 }
 
 /*Hero Styles*/
+.css-1bn53lx,
 .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
   border-radius: 25px !important;
   width: 100% !important;
@@ -209,6 +210,8 @@ ul {
   .MuiTypography-h4{
     font-size: 1.4rem !important;
   }
+  .MuiTypography-h2,
+  .css-18oppor,
   .css-8y3088-MuiTypography-root{
     font-size: 2rem !important;
     line-height: 0 !important;
@@ -218,6 +221,8 @@ ul {
     font-size: 1.8rem !important;
     line-height: 0 !important;
   }  
+  .css-1bn53lx,
+  .css-i44wyl,
   .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
     width: 100% !important;
     margin-bottom: 10px !important;
@@ -225,6 +230,7 @@ ul {
   .css-10vjzfb-MuiButtonBase-root-MuiButton-root{
     margin-left: 0 !important;
   }
+  .css-1ekasd5,
   .css-1tp3ba8-MuiGrid-root{
     min-height: 400px !important;
   }
@@ -238,8 +244,8 @@ ul {
     min-height: 120px !important;
   }
   .boxBtnSearch .SearchMargin{
-    width: 100% !important;
-    margin-right: 0 !important;
+    width: 60% !important;
+    margin-right: 10px !important;
   }
   .vertList .MuiTimelineItem-alignLeft::before{
     display: none !important;
@@ -264,8 +270,15 @@ ul {
     width: 450px !important;
     height: 400px !important;
   }
+  .MuiTabs-indicator{
+    display: none !important;
+  }
 }
 @media screen and (max-width: 600px){
+  .boxBtnSearch .SearchMargin{
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
   .MuiBox-root-72,
   .jss72{
     margin-top: 50px !important;
