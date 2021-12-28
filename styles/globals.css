@@ -66,8 +66,8 @@ ul {
   padding: 0;
   margin: 0;
 }
-.jss1,
-.MuiBox-root-1 {
+.MuiBox-root-1,
+.jss1 {
   padding-top: 0px !important;
 }
   
@@ -174,7 +174,13 @@ ul {
 .jss103 .MuiPaper-rounded{
   height: 100% !important;
 }
-
+.MuiLink-underlineHover.MuiTypography-colorPrimary{
+  color: #3a3a3a !important;
+  text-decoration: none !important;
+}
+.MuiLink-underlineHover:hover{  
+  text-decoration: none !important;
+}
 .MuiBox-root-100 .MuiPaper-root,
 .jss100 .MuiPaper-root{
   width: 100% !important;
