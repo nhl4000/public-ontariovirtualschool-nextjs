@@ -98,10 +98,12 @@ ul {
 .jss77 button.MuiButton-contained,
 .MuiButton-containedPrimary, 
 .jss79,
+.MuiBox-root-79,
 .redBtn{
   color: #ffffff !important;
   background-color: #aa0303 !important;
 }
+
 
 /*Yellow Button*/
 .MuiButton-containedSecondary{
@@ -145,18 +147,26 @@ ul {
   width: 450px !important;
   height: 400px !important;
 }
-
+ 
+ .MuiBox-root-91,
 .jss91,
+.MuiBox-root-92,
 .jss92,
+.MuiBox-root-92 .MuiPaper-rounded,
 .jss92 .MuiPaper-rounded,
 .video2 .MuiPaper-rounded,
+.MuiBox-root-101,
 .jss101,
+.MuiBox-root-102,
 .jss102,
+.MuiBox-root-103,
 .jss103,
+.MuiBox-root-103 .MuiPaper-rounded,
 .jss103 .MuiPaper-rounded{
   height: 100% !important;
 }
 
+.MuiBox-root-100 .MuiPaper-root,
 .jss100 .MuiPaper-root{
   width: 100% !important;
   height: 400px !important;
@@ -185,6 +195,98 @@ ul {
   padding: 10px !important;
   margin: 10px !important;
   min-height: 425px !important;
+}
+@media screen and (max-width: 780px) {
+  p, li, strong, body{
+    font-size: 1rem !important;
+  }
+  #top-main{
+    padding: 10px !important;
+  }
+  .MuiTypography-h3{
+    font-size: 1.8rem !important;
+  }
+  .MuiTypography-h4{
+    font-size: 1.4rem !important;
+  }
+  .css-8y3088-MuiTypography-root{
+    font-size: 2rem !important;
+    line-height: 0 !important;
+    text-align: left !important;
+  }  
+  .css-1pve29y-MuiTypography-root span{
+    font-size: 1.8rem !important;
+    line-height: 0 !important;
+  }  
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+  .css-10vjzfb-MuiButtonBase-root-MuiButton-root{
+    margin-left: 0 !important;
+  }
+  .css-1tp3ba8-MuiGrid-root{
+    min-height: 400px !important;
+  }
+  .MuiTabs-flexContainer{
+    flex-wrap: wrap !important;
+  }
+  .MuiCardContent-root p{
+    font-size: .8rem !important;
+  }
+  .MuiGrid-item .MuiCardContent-root{
+    min-height: 120px !important;
+  }
+  .boxBtnSearch .SearchMargin{
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .vertList .MuiTimelineItem-alignLeft::before{
+    display: none !important;
+  }
+  .MuiBox-root-72,
+  .jss72{
+    clear: both !important;
+    display: block !important;
+    margin-top: 150px !important;
+  }
+    .jss79,
+  .MuiBox-root-79{
+    margin-top: 5px !important;
+  }
+  .jss80
+  .MuiBox-root-80{
+    align-content: center !important;
+    justify-content: center !important;
+  }
+  .MuiBox-root-90,
+  .jss90{
+    width: 450px !important;
+    height: 400px !important;
+  }
+}
+@media screen and (max-width: 600px){
+  .MuiBox-root-72,
+  .jss72{
+    margin-top: 50px !important;
+  }
+  .jss83,
+  .MuiBox-root-83{  
+    left: 27% !important;
+  }
+  .jss81,
+  .MuiBox-root-81{  
+    top: 200px !important;
+    left: 20% !important;
+  }
+  .jss80,
+  .MuiBox-root-80{
+    height: 730px !important;
+  }
+  .jss85,
+  .MuiBox-root-85{
+    left: 5% !important;    
+  }
 }
 @media screen and (max-width: 450px) {
   .react-multiple-carousel__arrow {

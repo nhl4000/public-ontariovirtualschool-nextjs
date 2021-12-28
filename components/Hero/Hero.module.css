@@ -48,9 +48,10 @@
   background-color: #aa0303 !important;
   color: #ffffff !important;
 }
+
 @media screen and (min-width: 450px) {
   .HeroBtn {
-    margin-left: 10px !important;
+    margin-left: 0 !important;
     margin-top: 0 !important;
     padding: 15px 25px !important;
   }
