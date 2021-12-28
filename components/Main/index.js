@@ -129,21 +129,25 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <CardMedia
-                                  image={course.yoast_head_json.og_image[0].url}
-                                  title={course.title.rendered}
-                                  style={{
-                                    height: 240,
-                                  }}
-                                />
-                                <Box component={CardContent} position="relative">
-                                  <Typography
-                                    //   variant={"h6"}
-                                    gutterBottom
-                                    fontWeight={500}
-                                    align={"left"}
-                                    dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <CardMedia
+                                    image={course.yoast_head_json.og_image[0].url}
+                                    title={course.title.rendered}
+                                    style={{
+                                      height: 240,
+                                    }}
                                   />
+                                </Link>
+                                <Box component={CardContent} position="relative">
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      //   variant={"h6"}
+                                      gutterBottom
+                                      fontWeight={500}
+                                      align={"left"}
+                                      dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                    />
+                                  </Link>
                                   <Typography
                                     //   variant={"p"}
                                     gutterBottom
@@ -167,30 +171,22 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered} >
-                                    <Button color="primary" variant="contained" size="small" fullWidth>
-                                      Register Now
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                    Register Now
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small" fullWidth>
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small">
-                                      Register Now
-                                    </Button>
-                                  </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small">
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small">
+                                    Register Now
+                                  </Button>
+                                  <Button color="secondary" variant="contained" size="small">
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                               </Box>
                             </Box>
@@ -230,22 +226,26 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <CardMedia
-                                  image={course.yoast_head_json.og_image[0].url}
-                                  title={course.title.rendered}
-                                  style={{
-                                    height: 240,
-                                  }}
-                                />
+                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <CardMedia
+                                    image={course.yoast_head_json.og_image[0].url}
+                                    title={course.title.rendered}
+                                    style={{
+                                      height: 240,
+                                    }}
+                                  />
+                                </Link>
                                 <Box position="relative">
                                   <CardContent>
-                                    <Typography
-                                      variant={"h6"}
-                                      gutterBottom
-                                      fontWeight={500}
-                                      align={"left"}
-                                      dangerouslySetInnerHTML={{ __html: course.title.rendered }}
-                                    />
+                                    <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                      <Typography
+                                        variant={"h6"}
+                                        gutterBottom
+                                        fontWeight={500}
+                                        align={"left"}
+                                        dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                      />
+                                    </Link>
                                     <Typography
                                       variant={"body1"}
                                       gutterBottom
@@ -270,30 +270,22 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small" fullWidth>
-                                      Register Now
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                    Register Now
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small" fullWidth>
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small">
-                                      Register Now
-                                    </Button>
-                                  </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small">
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small">
+                                    Register Now
+                                  </Button>
+                                  <Button color="secondary" variant="contained" size="small">
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                               </Box>
                             </Box>
@@ -333,21 +325,25 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <CardMedia
-                                  image={course.yoast_head_json.og_image[0].url}
-                                  title={course.title.rendered}
-                                  style={{
-                                    height: 240,
-                                  }}
-                                />
-                                <Box component={CardContent} position="relative">
-                                  <Typography
-                                    variant={"h6"}
-                                    gutterBottom
-                                    fontWeight={500}
-                                    align={"left"}
-                                    dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <CardMedia
+                                    image={course.yoast_head_json.og_image[0].url}
+                                    title={course.title.rendered}
+                                    style={{
+                                      height: 240,
+                                    }}
                                   />
+                                </Link>
+                                <Box component={CardContent} position="relative">
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      variant={"h6"}
+                                      gutterBottom
+                                      fontWeight={500}
+                                      align={"left"}
+                                      dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                    />
+                                  </Link>
                                   <Typography
                                     variant={"body1"}
                                     gutterBottom
@@ -371,30 +367,22 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small" fullWidth>
-                                      Register Now
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                    Register Now
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small" fullWidth>
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small">
-                                      Register Now
-                                    </Button>
-                                  </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small">
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small">
+                                    Register Now
+                                  </Button>
+                                  <Button color="secondary" variant="contained" size="small">
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                               </Box>
                             </Box>
@@ -434,21 +422,25 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <CardMedia
-                                  image={course.yoast_head_json.og_image[0].url}
-                                  title={course.title.rendered}
-                                  style={{
-                                    height: 240,
-                                  }}
-                                />
-                                <Box component={CardContent} position="relative">
-                                  <Typography
-                                    variant={"h6"}
-                                    gutterBottom
-                                    fontWeight={500}
-                                    align={"left"}
-                                    dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <CardMedia
+                                    image={course.yoast_head_json.og_image[0].url}
+                                    title={course.title.rendered}
+                                    style={{
+                                      height: 240,
+                                    }}
                                   />
+                                </Link>
+                                <Box component={CardContent} position="relative">
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      variant={"h6"}
+                                      gutterBottom
+                                      fontWeight={500}
+                                      align={"left"}
+                                      dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                    />
+                                  </Link>
                                   <Typography
                                     variant={"body1"}
                                     gutterBottom
@@ -472,30 +464,22 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small" fullWidth>
-                                      Register Now
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                    Register Now
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small" fullWidth>
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small">
-                                      Register Now
-                                    </Button>
-                                  </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small">
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small">
+                                    Register Now
+                                  </Button>
+                                  <Button color="secondary" variant="contained" size="small">
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                               </Box>
                             </Box>
@@ -536,21 +520,25 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <CardMedia
-                                  image={course.yoast_head_json.og_image[0].url}
-                                  title={course.title.rendered}
-                                  style={{
-                                    height: 240,
-                                  }}
-                                />
-                                <Box component={CardContent} position="relative">
-                                  <Typography
-                                    variant={"h6"}
-                                    gutterBottom
-                                    fontWeight={500}
-                                    align={"left"}
-                                    dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <CardMedia
+                                    image={course.yoast_head_json.og_image[0].url}
+                                    title={course.title.rendered}
+                                    style={{
+                                      height: 240,
+                                    }}
                                   />
+                                </Link>
+                                <Box component={CardContent} position="relative">
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      variant={"h6"}
+                                      gutterBottom
+                                      fontWeight={500}
+                                      align={"left"}
+                                      dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                    />
+                                  </Link>
                                   <Typography
                                     variant={"body1"}
                                     gutterBottom
@@ -574,30 +562,22 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small" fullWidth>
-                                      Register Now
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                    Register Now
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small" fullWidth>
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small">
-                                      Register Now
-                                    </Button>
-                                  </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small">
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small">
+                                    Register Now
+                                  </Button>
+                                  <Button color="secondary" variant="contained" size="small">
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                               </Box>
                             </Box>
@@ -637,21 +617,25 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <CardMedia
-                                  image={course.yoast_head_json.og_image[0].url}
-                                  title={course.title.rendered}
-                                  style={{
-                                    height: 240,
-                                  }}
-                                />
-                                <Box component={CardContent} position="relative">
-                                  <Typography
-                                    variant={"h6"}
-                                    gutterBottom
-                                    fontWeight={500}
-                                    align={"left"}
-                                    dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <CardMedia
+                                    image={course.yoast_head_json.og_image[0].url}
+                                    title={course.title.rendered}
+                                    style={{
+                                      height: 240,
+                                    }}
                                   />
+                                </Link>
+                                <Box component={CardContent} position="relative">
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      variant={"h6"}
+                                      gutterBottom
+                                      fontWeight={500}
+                                      align={"left"}
+                                      dangerouslySetInnerHTML={{ __html: course.title.rendered }}
+                                    />
+                                  </Link>
                                   <Typography
                                     variant={"body1"}
                                     gutterBottom
@@ -675,30 +659,22 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small" fullWidth>
-                                      Register Now
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                    Register Now
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small" fullWidth>
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="primary" variant="contained" size="small">
-                                      Register Now
-                                    </Button>
-                                  </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
-                                    <Button color="secondary" variant="contained" size="small">
-                                      View Course Outline
-                                    </Button>
-                                  </Link>
+                                  <Button color="primary" variant="contained" size="small">
+                                    Register Now
+                                  </Button>
+                                  <Button color="secondary" variant="contained" size="small">
+                                    View Course Outline
+                                  </Button>
                                 </Box>
                               </Box>
                             </Box>
