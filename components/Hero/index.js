@@ -36,7 +36,7 @@ const Hero = (props) => {
           container
           spacing={4}
           // minHeight="85vh"
-          marginTop={4}>
+          marginTop={2}>
           <Grid className={styles.heroWrapper} item container xs={12} md={6}>
             <Box data-aos={isMd ? "fade-right" : "fade-up"}>
               <Box marginBottom={2}>

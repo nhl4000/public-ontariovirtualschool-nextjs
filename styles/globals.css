@@ -66,7 +66,11 @@ ul {
   padding: 0;
   margin: 0;
 }
-
+.jss1,
+.MuiBox-root-1 {
+  padding-top: 0px !important;
+}
+  
 .react-multiple-carousel__arrow--left {
   left: calc(0% + 1px);
 }
@@ -81,7 +85,7 @@ ul {
 .css-1bn53lx,
 .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
   border-radius: 25px !important;
-  width: 100% !important;
+  margin-right: 5px !important;
 }
 .MuiTabs-indicator,
 .PrivateTabIndicator-colorPrimary{
@@ -103,6 +107,7 @@ ul {
 .redBtn{
   color: #ffffff !important;
   background-color: #aa0303 !important;
+  margin: 5px !important;
 }
 
 
@@ -110,6 +115,7 @@ ul {
 .MuiButton-containedSecondary{
   color: #ffffff !important;
   background-color: #f9b934 !important;
+  margin: 5px !important;
 }
 
 /*Yellow Text*/
@@ -143,13 +149,15 @@ ul {
 .jss78 .MuiButton-containedSecondary{
   margin-right: 10px !important;
 }
-
+.MuiBox-root-90,
 .jss90{
   width: 450px !important;
   height: 400px !important;
 }
- 
- .MuiBox-root-91,
+.MuiTypography-body2{
+  font-size: .7rem !important;
+} 
+.MuiBox-root-91,
 .jss91,
 .MuiBox-root-92,
 .jss92,
@@ -178,7 +186,16 @@ ul {
   box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   height: 400px;
 }
-
+.revBody{
+  min-height: 150px !important;
+}
+.MuiBox-root-72,
+.jss72{
+  margin-top: 150px !important;
+}
+#footer-cta{
+  display: none !important;
+}
 .vidRevBox{
   background-color: #ffffff !important;
 }
@@ -254,7 +271,6 @@ ul {
   .jss72{
     clear: both !important;
     display: block !important;
-    margin-top: 150px !important;
   }
     .jss79,
   .MuiBox-root-79{

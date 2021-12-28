@@ -92,6 +92,7 @@ const Reviews = (props) => {
                       </Box>
                     </Box>
                     <Typography
+                      className="revBody"
                       align={"left"}
                       color="textSecondary"
                       dangerouslySetInnerHTML={{ __html: rev.content.rendered }}

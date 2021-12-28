@@ -16,6 +16,7 @@ import { makeStyles } from "@material-ui/styles";
 import Paper from "@material-ui/core/Paper";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
+import Link from "@material-ui/core/Link";
 import PropTypes from "prop-types";
 import Container from "../common/Container";
 import { ExitToApp } from "@material-ui/icons";
@@ -88,9 +89,6 @@ const Main = (props) => {
               Our Most Popular Courses
             </Typography>
           </Box>
-          <Typography variant={"h6"} component={"p"} color={"textSecondary"} align={"center"} data-aos={"fade-up"}>
-            Grade Course Selector Here
-          </Typography>
         </Box>
         <Box marginBottom={4} data-aos={"fade-up"}>
           <Paper className={classes.root}>
@@ -169,22 +167,30 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
-                                    Register Now
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered} >
+                                    <Button color="primary" variant="contained" size="small" fullWidth>
+                                      Register Now
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small" fullWidth>
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
-                                    Register Now
-                                  </Button>
-                                  <Button color="secondary" variant="contained" size="small">
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small">
+                                      Register Now
+                                    </Button>
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small">
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                               </Box>
                             </Box>
@@ -264,22 +270,30 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
-                                    Register Now
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small" fullWidth>
+                                      Register Now
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small" fullWidth>
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
-                                    Register Now
-                                  </Button>
-                                  <Button color="secondary" variant="contained" size="small">
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small">
+                                      Register Now
+                                    </Button>
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small">
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                               </Box>
                             </Box>
@@ -357,22 +371,30 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
-                                    Register Now
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small" fullWidth>
+                                      Register Now
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small" fullWidth>
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
-                                    Register Now
-                                  </Button>
-                                  <Button color="secondary" variant="contained" size="small">
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small">
+                                      Register Now
+                                    </Button>
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small">
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                               </Box>
                             </Box>
@@ -450,22 +472,30 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
-                                    Register Now
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small" fullWidth>
+                                      Register Now
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small" fullWidth>
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
-                                    Register Now
-                                  </Button>
-                                  <Button color="secondary" variant="contained" size="small">
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small">
+                                      Register Now
+                                    </Button>
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small">
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                               </Box>
                             </Box>
@@ -544,22 +574,30 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
-                                    Register Now
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small" fullWidth>
+                                      Register Now
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small" fullWidth>
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
-                                    Register Now
-                                  </Button>
-                                  <Button color="secondary" variant="contained" size="small">
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small">
+                                      Register Now
+                                    </Button>
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small">
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                               </Box>
                             </Box>
@@ -637,22 +675,30 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
-                                    Register Now
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small" fullWidth>
+                                      Register Now
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small" fullWidth>
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
-                                    Register Now
-                                  </Button>
-                                  <Button color="secondary" variant="contained" size="small">
-                                    View Course Outline
-                                  </Button>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="primary" variant="contained" size="small">
+                                      Register Now
+                                    </Button>
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Button color="secondary" variant="contained" size="small">
+                                      View Course Outline
+                                    </Button>
+                                  </Link>
                                 </Box>
                               </Box>
                             </Box>

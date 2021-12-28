@@ -137,7 +137,7 @@ const Register = (props) => {
                 variant="contained"
                 color="primary"
                 size="large"
-                fullWidth={true}>
+                fullWidth={false}>
                 SCHEDULE A COUNSELLING APPOINTMENT
               </Button>
             </Box>
