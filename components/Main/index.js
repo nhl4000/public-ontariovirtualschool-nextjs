@@ -156,18 +156,22 @@ const Main = (props) => {
                                     className="itemPrice"
                                     dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                   />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
-                                  />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_field }}
-                                  />
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
+                                    />
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_field }}
+                                    />
+                                  </Link>
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
@@ -254,18 +258,22 @@ const Main = (props) => {
                                       className="itemPrice"
                                       dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                     />
-                                    <Typography
-                                      align={"left"}
-                                      variant={"body2"}
-                                      color="textSecondary"
-                                      dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
-                                    />
-                                    <Typography
-                                      align={"left"}
-                                      variant={"body2"}
-                                      color="textSecondary"
-                                      dangerouslySetInnerHTML={{ __html: course.home_field }}
-                                    />
+                                    <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                      <Typography
+                                        align={"left"}
+                                        variant={"body2"}
+                                        color="textSecondary"
+                                        dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
+                                      />
+                                    </Link>
+                                    <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                      <Typography
+                                        align={"left"}
+                                        variant={"body2"}
+                                        color="textSecondary"
+                                        dangerouslySetInnerHTML={{ __html: course.home_field }}
+                                      />
+                                    </Link>
                                   </CardContent>
                                 </Box>
                                 <Box flexGrow={1} />
@@ -352,18 +360,22 @@ const Main = (props) => {
                                     className="itemPrice"
                                     dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                   />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
-                                  />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_field }}
-                                  />
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
+                                    />
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_field }}
+                                    />
+                                  </Link>
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
@@ -449,18 +461,22 @@ const Main = (props) => {
                                     className="itemPrice"
                                     dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                   />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
-                                  />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_field }}
-                                  />
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
+                                    />
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_field }}
+                                    />
+                                  </Link>
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
@@ -547,18 +563,22 @@ const Main = (props) => {
                                     className="itemPrice"
                                     dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                   />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
-                                  />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_field }}
-                                  />
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
+                                    />
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_field }}
+                                    />
+                                  </Link>
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
@@ -644,18 +664,22 @@ const Main = (props) => {
                                     className="itemPrice"
                                     dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                   />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
-                                  />
-                                  <Typography
-                                    align={"left"}
-                                    variant={"body2"}
-                                    color="textSecondary"
-                                    dangerouslySetInnerHTML={{ __html: course.home_field }}
-                                  />
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
+                                    />
+                                  </Link>
+                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      align={"left"}
+                                      variant={"body2"}
+                                      color="textSecondary"
+                                      dangerouslySetInnerHTML={{ __html: course.home_field }}
+                                    />
+                                  </Link>
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">

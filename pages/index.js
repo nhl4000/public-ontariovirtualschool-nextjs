@@ -177,7 +177,7 @@ export async function getStaticProps() {
       home: {
         hero: homeData["home_hero"][0],
         statistics: homeData["home_statistics"],
-        reviews: homeData["home_featured"],
+        reviews: homeData["home_written_reviews"],
         courses: homeData["home_our_courses"],
         steps: homeData["home_reg_steps"],
         about: homeData["home_about"],

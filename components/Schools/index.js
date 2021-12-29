@@ -130,17 +130,12 @@ export default function Schools(props) {
                     borderRadius={0}
                     boxShadow={"none"}>
                     <CardMedia
-                      className="SliderImg"
+                      className={styles.schoollImg}
                       image={school.yoast_head_json.og_image[0].url}
                       style={{
                         height: 50,
                       }}
                     />
-                    <Box component={CardContent}>
-                      <Typography align={"left"} variant={"body2"} color="textSecondary">
-                        {school.title.rendered}
-                      </Typography>
-                    </Box>
                   </Box>
                 </Box>
               </Grid>
