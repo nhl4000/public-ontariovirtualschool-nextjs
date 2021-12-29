@@ -1,0 +1,24 @@
+.logosul{
+  align-items: center !important;
+}
+.logos{
+  padding: 5px !important;
+  display: block !important;
+}
+.logos img{
+  width: 100% !important;
+  height: auto !important;
+  filter: grayscale(100%);
+  transition: ease-in;
+}
+.logos img:hover{
+  filter: grayscale(0%);
+}
+.SliderImg{
+  background-size: contain !important;
+  filter: grayscale(100%);
+  transition: ease-in;
+}
+.SliderImg:hover{
+  filter: grayscale(0%);
+}

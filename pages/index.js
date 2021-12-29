@@ -18,6 +18,7 @@ import VideoReviews from "../components/VideoReviews";
 import News from "../components/News";
 import Schools from "../components/Schools";
 import Footer from "../components/Footer";
+import Featured from "../components/Featured";
 import Container from "../components/common/Container";
 import Script from "next/script";
 import { NoSsr } from "@material-ui/core";
@@ -107,6 +108,7 @@ export default function Home(props) {
           {props.home && <Hero heroPost={props.home.hero} />}
         </section>
         {props.home && <Statistics statsPost={props.home.statistics} />}
+        {props.home && <Featured featured={props.home.featured} />}
         {props.home && <Reviews reviews={props.home.reviews} />}
         <section style={{ backgroundColor: "#f7f9fc" }}>
           {props.home && <Main courses={props.home.courses} />}
@@ -177,6 +179,7 @@ export async function getStaticProps() {
       home: {
         hero: homeData["home_hero"][0],
         statistics: homeData["home_statistics"],
+        featured: homeData['home_featured'],
         reviews: homeData["home_written_reviews"],
         courses: homeData["home_our_courses"],
         steps: homeData["home_reg_steps"],

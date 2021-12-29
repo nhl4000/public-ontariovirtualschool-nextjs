@@ -1,0 +1,29 @@
+.featurelImg {
+  filter: grayscale(100%);
+  transition: ease-in;
+}
+.featurelImg:hover {
+  filter: grayscale(0%);
+}
+.featurelImg {
+  background-size: contain !important;
+}
+
+.MobSlider {
+  display: none !important;
+}
+.DeskSlider{
+  margin-bottom: 100px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .MobSlider {
+    display: flex !important;
+  }
+  .DeskSlider {
+    display: none !important;
+  }
+  .leftText {
+    text-align: left !important;
+  }
+}
