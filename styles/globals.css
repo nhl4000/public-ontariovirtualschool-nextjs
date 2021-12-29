@@ -100,11 +100,10 @@ ul {
 /*End of Hero Styles*/
 
 /*Red button*/
-.MuiBox-root-77 button.MuiButton-contained,
+.jss10 button.MuiButton-contained,
 .jss77 button.MuiButton-contained,
+.jss21 .MuiButton-containedPrimary,
 .MuiButton-containedPrimary, 
-.jss79,
-.MuiBox-root-79,
 .redBtn{
   color: #ffffff !important;
   background-color: #aa0303 !important;
@@ -150,20 +149,20 @@ ul {
 .jss78 .MuiButton-containedSecondary{
   margin-right: 10px !important;
 }
-.MuiBox-root-90,
-.jss90{
+.MuiBox-root-94,
+.jss94{
   width: 450px !important;
   height: 400px !important;
 }
 .MuiTypography-body2{
   font-size: .7rem !important;
 } 
-.MuiBox-root-91,
-.jss91,
+.MuiBox-root-95,
+.jss95,
 .MuiBox-root-92,
 .jss92,
-.MuiBox-root-92 .MuiPaper-rounded,
-.jss92 .MuiPaper-rounded,
+.MuiBox-root-95 .MuiPaper-rounded,
+.jss95 .MuiPaper-rounded,
 .video2 .MuiPaper-rounded,
 .MuiBox-root-101,
 .jss101,
@@ -196,8 +195,8 @@ ul {
 .revBody{
   min-height: 150px !important;
 }
-.MuiBox-root-72,
-.jss72{
+.MuiBox-root-75,
+.jss75{
   margin-top: 150px !important;
 }
 #footer-cta{
@@ -274,24 +273,24 @@ ul {
   .vertList .MuiTimelineItem-alignLeft::before{
     display: none !important;
   }
-  .MuiBox-root-72,
-  .jss72{
+  .MuiBox-root-75,
+  .jss75{
     clear: both !important;
     display: block !important;
   }
-    .jss79,
+  .jss79,
   .MuiBox-root-79{
     margin-top: 5px !important;
   }
-  .jss80
-  .MuiBox-root-80{
+  .jss83
+  .MuiBox-root-83{
     align-content: center !important;
     justify-content: center !important;
   }
-  .MuiBox-root-90,
-  .jss90{
-    width: 450px !important;
-    height: 400px !important;
+  .MuiBox-root-94,
+  .jss94{
+    width: 95% !important;
+    height: 300px !important;
   }
   .MuiTabs-indicator{
     display: none !important;
@@ -306,22 +305,26 @@ ul {
   .jss72{
     margin-top: 50px !important;
   }
-  .jss83,
-  .MuiBox-root-83{  
+  .jss86,
+  .MuiBox-root-86{  
     left: 27% !important;
   }
-  .jss81,
-  .MuiBox-root-81{  
+  .jss84,
+  .MuiBox-root-84{  
     top: 200px !important;
     left: 20% !important;
   }
-  .jss80,
-  .MuiBox-root-80{
+  .jss83,
+  .MuiBox-root-83{
     height: 730px !important;
   }
-  .jss85,
-  .MuiBox-root-85{
+  .jss88,
+  .MuiBox-root-88{
     left: 5% !important;    
+  }
+  .MuiBox-root-100 .MuiPaper-root,
+  .jss100 .MuiPaper-root{
+    height: 250px !important;
   }
 }
 @media screen and (max-width: 450px) {
