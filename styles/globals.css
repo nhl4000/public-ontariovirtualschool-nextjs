@@ -49,6 +49,14 @@ body {
   font-size: 1.2rem;
 }
 
+p,
+.MuiTypography-body1,
+.MuiTypography-body2,
+.MuiTypography-root{
+  line-height: 1.2 !important;
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -60,6 +68,14 @@ a {
 
 ul {
   padding-left: 0;
+}
+
+.MuiTimelineDot-root{
+  margin-top: 20px !important;
+}
+
+.vertList li:last-child .MuiTimelineConnector-root{
+  display: none !important;
 }
 
 #menu > div ul.nav-main-menu {
@@ -141,6 +157,12 @@ ul {
   left: 10px !important;
   transform: none !important;
 }
+.MuiBox-root-82,
+.jss82{
+  background-color: #AA0303 !important;
+  color: #ffffff !important;
+  margin: 5px auto;
+}
 .jss81 p,
 .jss82 p{
   font-size: 0.9rem !important;
@@ -181,16 +203,44 @@ ul {
 .MuiLink-underlineHover:hover{  
   text-decoration: none !important;
 }
-.MuiBox-root-100 .MuiPaper-root,
-.jss100 .MuiPaper-root{
+.MuiCardActions-root .MuiButton-label{
+  font-size: 14px !important;
+  line-height: 15px !important;
+} 
+
+.MuiButton-root{
+  border-radius: 25px !important;
+}
+
+.MuiTypography-root li{
+  margin-bottom: 20px !important;
+}
+
+.MuiBox-root-116 .MuiGrid-item .MuiCard-root,
+.jss116 .MuiGrid-item .MuiCard-root{
+  padding: 0 !important;
+}
+
+.MuiBox-root-106,
+.jss106{
   width: 100% !important;
   height: 400px !important;
 }
 
-.TeamSlider .MuiGrid-item{
+#videoreviews .MuiTypography-root p{
+  font-size: 16px !important;
+  line-height: 17px !important;
+}
+.TeamSlider .react-multi-carousel-item{
   border-radius: 10px !important;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  height: 400px;
+  height: 350px;
+  margin: 2px !important;
+}
+
+.TeamSlider .MuiCardContent-root{
+  min-height: 100px !important;
+  padding-bottom: 0 !important;
 }
 .revBody{
   min-height: 150px !important;
@@ -220,9 +270,21 @@ ul {
   margin: 10px !important;
   min-height: 425px !important;
 }
+
+.NewsSlider li h6{
+  font-size: 1rem !important;
+  line-height: 1 !important;
+}
 @media screen and (max-width: 780px) {
   p, li, strong, body{
     font-size: 1rem !important;
+  }
+  .MuiBox-root-75 p {
+    line-height: 1.5 !important;
+    text-align: center !important;
+  }
+  .MuiButton-containedSecondary{
+    margin: 10px auto !important;
   }
   #top-main{
     padding: 10px !important;
@@ -287,11 +349,30 @@ ul {
     align-content: center !important;
     justify-content: center !important;
   }
+  .MuiBox-root-93,
+  .jss93{
+    margin: 15px auto !important;
+  }
+  .MuiBox-root-96,
+  .jss96,
   .MuiBox-root-94,
   .jss94{
-    width: 95% !important;
-    height: 300px !important;
+    max-width: 100% !important;
+    height: 250px !important;
+    margin: auto !important;    
   }
+
+  .MuiBox-root-98,
+  .jss98,
+  .MuiBox-root-97,
+  .jss97,
+  .MuiBox-root-98 .MuiPaper-rounded,
+  .jss98 .MuiPaper-rounded,
+  .MuiBox-root-97 .MuiPaper-rounded,
+  .jss97 .MuiPaper-rounded{
+    height: 100% !important;
+  }
+  
   .MuiTabs-indicator{
     display: none !important;
   }
@@ -300,6 +381,9 @@ ul {
   .boxBtnSearch .SearchMargin{
     width: 100% !important;
     margin-right: 0 !important;
+  }
+  #video .MuiCard-root{
+    margin: auto !important;
   }
   .MuiBox-root-72,
   .jss72{
@@ -335,10 +419,12 @@ ul {
   .react-multiple-carousel__arrow::before {
     font-size: 15px;
   }
-  .MuiBox-root-90{
-    width: 300px !important;
-    height: 280px !important;
+
+  .MuiBox-root-92,
+  .jss92{
+    display: block !important;
   }
+  
 }
 
 .MuiPaper-elevation1.MuiPaper-elevation1 {

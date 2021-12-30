@@ -58,9 +58,9 @@ export default function Featured(props) {
           responsive={responsive}
           arrows={0}
           autoPlay
-          autoPlaySpeed={4000}
+          autoPlaySpeed={2000}
           draggable
-          customTransition="all .4s linear"
+          customTransition="all .2s linear"
           infinite>
           {featured.map((feature, i) => (
             <Grid item margin={3} key={i}>
@@ -73,7 +73,7 @@ export default function Featured(props) {
                 height={"100%"}
                 style={{
                   textDecoration: "none",
-                  transition: "all .2s ease-in-out",
+                  transition: "all .4s ease-in-out",
                   "&:hover": {
                     transform: `translateY(-${theme.spacing(1 / 2)})`,
                   },
@@ -103,7 +103,7 @@ export default function Featured(props) {
             arrows={0}
             draggable
             autoPlay
-            autoPlaySpeed={4000}
+            autoPlaySpeed={2000}
             customTransition="all .4s linear"
             infinite>
             {featured.map((feature, i) => (

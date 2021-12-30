@@ -104,6 +104,7 @@ const Hero = (props) => {
                     frameBorder="0"
                     image={play ? null : video}
                     title="Ontario Virtual School"
+                    style={{ backgroundColor: "#f7f9fc" }}
                   // autoPlay
                   />
                 </Card>

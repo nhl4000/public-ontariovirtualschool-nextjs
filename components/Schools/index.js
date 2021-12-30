@@ -58,7 +58,7 @@ export default function Schools(props) {
           responsive={responsive}
           arrows={0}
           autoPlay
-          autoPlaySpeed={4000}
+          autoPlaySpeed={2000}
           draggable
           customTransition="all .4s linear"
           infinite>
@@ -103,7 +103,7 @@ export default function Schools(props) {
             arrows={0}
             draggable
             autoPlay
-            autoPlaySpeed={4000}
+            autoPlaySpeed={2000}
             customTransition="all .4s linear"
             infinite>
             {schools.map((school, i) => (
@@ -133,7 +133,7 @@ export default function Schools(props) {
                       className={styles.schoollImg}
                       image={school.yoast_head_json.og_image[0].url}
                       style={{
-                        height: 50,
+                        height: 75,
                       }}
                     />
                   </Box>

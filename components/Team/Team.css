@@ -4,3 +4,9 @@
 .TeamSlider .react-multi-carousel-item .MuiGrid-item {
   margin: 10px;
 }
+
+@media screen and (max-width: 600px){
+  .TeamSlider .react-multi-carousel-item {
+    left: unset !important;
+  }
+}
