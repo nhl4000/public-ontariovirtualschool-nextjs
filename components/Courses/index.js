@@ -70,13 +70,17 @@ const Courses = (props) => {
                       <CardMedia
                         component="video"
                         alt="Ontatio Virtual Schoool"
-                        image={learn.home_learning_video}
+                        src={learn.home_learning_video}
+                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Math.mov"
+                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Math.webm"
                         title="Ontatio Virtual Schoool"
-                        autoPlay="true"
-                        muted="true"
+                        autoPlay
+                        muted
                         width="200px"
                         loop={1}
                         autopause={0}
+                        allow="autoplay"
+                        playsInline
                       />
                     </Card>
                   </Box>
@@ -98,13 +102,17 @@ const Courses = (props) => {
                         component="video"
                         alt="Ontatio Virtual Schoool"
                         width="100%"
-                        image="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mp4"
+                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mp4"
+                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mov"
+                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.webm"
                         title="Ontario Virtual Schoool"
-                        autoPlay="true"
-                        muted="true"
-                        height="100%"
+                        autoPlay
+                        muted
+                        width="200px"
                         loop={1}
                         autopause={0}
+                        allow="autoplay"
+                        playsInline
                       />
                     </Card>
                   </Box>

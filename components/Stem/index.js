@@ -72,9 +72,11 @@ const Stem = (props) => {
                         alt="Ontatio Virtual Schoool"
                         height="100%"
                         width="100%"
-                        image={stem.home_stem_video}
+                        src={stem.home_stem_video}
                         title="Ontatio Virtual Schoool"
-                      // autoPlay
+                        autoPlay
+                        allow="autoplay"
+                        playsInline
                       />
                     </Card>
                   </Box>
