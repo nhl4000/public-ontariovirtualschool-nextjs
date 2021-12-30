@@ -70,10 +70,6 @@ ul {
   padding-left: 0;
 }
 
-.MuiTimelineDot-root{
-  margin-top: 20px !important;
-}
-
 .vertList li:last-child .MuiTimelineConnector-root{
   display: none !important;
 }

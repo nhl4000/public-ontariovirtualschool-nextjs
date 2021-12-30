@@ -53,7 +53,7 @@ const Register = (props) => {
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent style={{ marginTop: "1em" }}>
+                  <TimelineContent style={{ marginTop: "5px" }}>
                     <span className="steps">{step.title.rendered}</span>
                     <br />
                     {step.content.rendered.replace(/(<([^>]+)>)/gi, "")}
