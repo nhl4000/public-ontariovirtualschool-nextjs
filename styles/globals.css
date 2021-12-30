@@ -362,6 +362,10 @@ ul {
     height: 250px !important;
     margin: auto !important;    
   }
+  .MuiBox-root-103,
+  .jss103{
+    height: 450px !important;
+  }
 
   .MuiBox-root-98,
   .jss98,
