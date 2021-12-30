@@ -56,6 +56,7 @@ const Courses = (props) => {
             </Box>
             <Box display={"flex"} alignItems={"baseline"} justifyContent={"center"}>
               <Box
+                className="vertVideo"
                 component={Card}
                 maxWidth={700}
                 boxShadow={3}
@@ -66,13 +67,15 @@ const Courses = (props) => {
                   <Box border={`1px solid ${theme.palette.divider}`}>
                     <Card>
                       <CardMedia
-                        component="iframe"
+                        component="video"
                         alt="Ontatio Virtual Schoool"
-                        height="100%"
-                        width="100%"
                         image={learn.home_learning_video}
                         title="Ontatio Virtual Schoool"
-                      // autoPlay
+                        autoPlay="true"
+                        muted="true"
+                        width="200px"
+                        loop={1}
+                        autopause={0}
                       />
                     </Card>
                   </Box>
@@ -89,14 +92,18 @@ const Courses = (props) => {
                 data-aos={isMd ? "fade-left" : "fade-up"}>
                 <Box component={CardContent}>
                   <Box border={`1px solid ${theme.palette.divider}`}>
-                    <Card>
+                    <Card className="smallvideo">
                       <CardMedia
-                        component="iframe"
+                        component="video"
                         alt="Ontatio Virtual Schoool"
                         width="100%"
-                        image={learn.home_learning_video}
+                        image="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mp4"
                         title="Ontario Virtual Schoool"
-                      // autoPlay
+                        autoPlay="true"
+                        muted="true"
+                        height="100%"
+                        loop={1}
+                        autopause={0}
                       />
                     </Card>
                   </Box>

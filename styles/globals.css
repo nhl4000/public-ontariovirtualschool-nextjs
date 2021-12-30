@@ -171,11 +171,25 @@ ul {
 .jss78 .MuiButton-containedSecondary{
   margin-right: 10px !important;
 }
-.MuiBox-root-94,
-.jss94{
-  width: 450px !important;
-  height: 400px !important;
+
+.vertVideo .MuiCardMedia-media{
+  width: 200px !important;
+} 
+
+.MuiBox-root-96,
+.jss96{
+  width: 300px !important;
 }
+
+.smallvideo{
+  height: 150px !important;
+}
+
+.stemVideo{
+  max-height: 450px !important;
+  width: 100% !important;
+}
+
 .MuiTypography-body2{
   font-size: .7rem !important;
 } 
@@ -360,10 +374,17 @@ ul {
   .jss93{
     margin: 15px auto !important;
   }
+  .vertVideo{
+    max-width: 80% !important;
+    margin: 10px auto !important;
+  }
+
+  .vertVideo .MuiCardMedia-media{
+    width: 100% !important;
+  }
+
   .MuiBox-root-96,
-  .jss96,
-  .MuiBox-root-94,
-  .jss94{
+  .jss96{
     max-width: 100% !important;
     height: 250px !important;
     margin: auto !important;    

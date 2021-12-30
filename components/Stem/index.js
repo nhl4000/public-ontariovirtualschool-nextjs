@@ -56,6 +56,7 @@ const Stem = (props) => {
             </Box>
             <Box display={"flex"} alignItems={"baseline"} justifyContent={"center"}>
               <Box
+                className="stemVideo"
                 component={Card}
                 maxWidth={700}
                 boxShadow={3}
