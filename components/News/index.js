@@ -58,7 +58,7 @@ export default function News(props) {
           <Typography variant={"h6"} component={"p"} color={"textSecondary"} align={"center"}></Typography>
         </Box>
 
-        <Carousel className="NewsSlider" partialVisible={true} responsive={responsive}>
+        <Carousel className="NewsSlider" responsive={responsive}>
           {posts.map(function (post, index) {
             return (
               <Grid item margin={3} style={{ height: "350px" }} key={index}>
