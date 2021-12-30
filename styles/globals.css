@@ -271,9 +271,10 @@ ul {
 
 .NewsSlider li{
   background-color: #f7f9fc !important;
-  padding: 10px !important;
-  margin: 10px !important;
+  padding: 5px !important;
+  margin: 2px !important;
   min-height: 425px !important;
+  max-width: 280px !important;
 }
 
 .NewsSlider li h6{
