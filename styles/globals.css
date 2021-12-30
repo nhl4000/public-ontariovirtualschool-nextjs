@@ -353,6 +353,7 @@ ul {
   .MuiGrid-item .MuiCardContent-root{
     min-height: 120px !important;
   }
+  .boxBtnSearch .standard-search,
   .boxBtnSearch .SearchMargin{
     width: 60% !important;
     margin-right: 10px !important;
@@ -425,8 +426,28 @@ ul {
     max-width: 80% !important;
     margin-left: auto !important;
   }
+
+  .jss10 button.MuiButton-contained, 
+  .jss21 .MuiButton-containedPrimary, 
+  .jss77 button.MuiButton-contained, 
+  .MuiButton-containedPrimary, 
+  .redBtn {
+    margin: 0px!important;
+  }
 }
 @media screen and (max-width: 600px){
+  
+  .jss71 .MuiInputBase-input,
+  .MuiBox-root-71 .MuiInputBase-input{
+    padding: 10px !important;
+  }
+
+  .jss71.boxBtnSearch .MuiButton-label,
+  .MuiBox-root-71.boxBtnSearch .MuiButton-label{
+    line-height: 1.6 !important;
+  }
+  
+  .boxBtnSearch #standard-search,
   .boxBtnSearch .SearchMargin{
     width: 100% !important;
     margin-right: 0 !important;
