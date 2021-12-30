@@ -212,6 +212,11 @@ ul {
   border-radius: 25px !important;
 }
 
+.jss21 .MuiButton-root,
+.MuiBox-root-21 .MuiButton-root{  
+  border-radius: 4px !important;
+}
+
 .MuiTypography-root li{
   margin-bottom: 20px !important;
 }
