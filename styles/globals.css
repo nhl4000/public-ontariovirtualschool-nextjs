@@ -436,7 +436,10 @@ ul {
   }
 }
 @media screen and (max-width: 600px){
-  
+  .TeamSlider li{
+    max-width: 90% !important;
+    margin: auto !important;
+  }
   .jss71 .MuiInputBase-input,
   .MuiBox-root-71 .MuiInputBase-input{
     padding: 10px !important;
