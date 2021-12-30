@@ -53,7 +53,7 @@ const Hero = (props) => {
                   <Typed strings={anim} typeSpeed={70} loop={true} />
                 </Typography>
               </Box>
-              <Box marginBottom={3}>
+              <Box className="subtitle" marginBottom={3}>
                 <Typography
                   variant="h6"
                   // component="p"

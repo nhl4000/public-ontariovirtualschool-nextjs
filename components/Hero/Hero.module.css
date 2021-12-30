@@ -16,6 +16,11 @@
   height: 100%;
 }
 
+.heroWrapper .subtitle p{
+  font-size: 1.1rem !important;
+  line-height: 1.4 !important;
+}
+
 .open {
   display: none;
 }

@@ -279,6 +279,7 @@ ul {
   p, li, strong, body{
     font-size: 1rem !important;
   }
+  .jss75 p,
   .MuiBox-root-75 p {
     line-height: 1.5 !important;
     text-align: center !important;
@@ -406,9 +407,15 @@ ul {
   .MuiBox-root-88{
     left: 5% !important;    
   }
-  .MuiBox-root-100 .MuiPaper-root,
-  .jss100 .MuiPaper-root{
+  .MuiBox-root-103,
+  .jss103{
     height: 250px !important;
+  }
+  .MuiBox-root-105,
+  .jss105,
+  .MuiBox-root-106,
+  .jss106{
+    height: 100% !important;
   }
 }
 @media screen and (max-width: 450px) {
