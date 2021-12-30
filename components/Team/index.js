@@ -51,7 +51,7 @@ const Team = (props) => {
         </Box>
       </Box>
 
-      <Carousel className="TeamSlider" partialVisible={true} responsive={responsive}>
+      <Carousel className="TeamSlider" responsive={responsive}>
         {teams.map(function (team, i) {
           // Skip Team Members with no images OR set default image here
           if (team.yoast_head_json.schema["@graph"][1].url.length === 0) {

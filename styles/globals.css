@@ -284,16 +284,24 @@ ul {
 }
 
 .NewsSlider li{
-  background-color: #f7f9fc !important;
-  padding: 5px !important;
-  margin: 2px !important;
-  min-height: 425px !important;
-  max-width: 280px !important;
+  background-color: #f7f9fc !important;  
+  margin: .5% !important;
+  min-height: 425px !important;  
+  max-width: 24% !important;
+}
+
+.NewsSlider li .MuiGrid-item{
+    max-width: 95% !important;
+    margin: auto !important;
+    border: solid 6px #f7f9fc!important;
 }
 
 .NewsSlider li h6{
   font-size: 1rem !important;
   line-height: 1 !important;
+}
+.MuiButton-label{
+  line-height: 1.2 !important;
 }
 @media screen and (max-width: 780px) {
   p, li, strong, body{
@@ -383,6 +391,15 @@ ul {
     width: 100% !important;
   }
 
+  .shomob.MuiCardActions-root{
+    padding: 0px !important;
+  }
+
+  .shomob button{
+    min-height: 50px !important;
+    margin: 5px 0 !important;
+  }
+
   .MuiBox-root-96,
   .jss96{
     max-width: 100% !important;
@@ -407,6 +424,10 @@ ul {
   
   .MuiTabs-indicator{
     display: none !important;
+  }
+  .revBody{
+    max-width: 80% !important;
+    margin-left: auto !important;
   }
 }
 @media screen and (max-width: 600px){
@@ -448,6 +469,16 @@ ul {
   .jss106{
     height: 100% !important;
   }
+  .NewsSlider li{
+    background-color:transparent !important;
+    max-width: 99% !important;
+  }
+  .NewsSlider li .MuiGrid-item{
+      max-width: 80% !important;
+      margin: auto !important;
+      border: solid 6px #f7f9fc!important;
+  }
+  
 }
 @media screen and (max-width: 450px) {
   .react-multiple-carousel__arrow {

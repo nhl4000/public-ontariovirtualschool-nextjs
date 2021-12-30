@@ -11,6 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Container from "../common/Container";
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const Stem = (props) => {
   const [stems, setStems] = useState(props.stem);
@@ -88,17 +89,7 @@ const Stem = (props) => {
                 variant="contained"
                 color="primary"
                 size="large"
-                endIcon={
-                  <svg
-                    width={16}
-                    height={16}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                }>
+                endIcon={<KeyboardArrowDownIcon />}>
                 REGISTER NOW
               </Button>
             </Box>
