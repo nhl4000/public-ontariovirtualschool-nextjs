@@ -168,17 +168,19 @@ ul {
   margin-right: 10px !important;
 }
 
-.vertVideo .MuiCardMedia-media{
-  width: 200px !important;
-} 
-
-.MuiBox-root-96,
-.jss96{
-  width: 300px !important;
+.vertVideo{
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
+.vertVideo .MuiCardMedia-media{
+  width: 100% !important;
+  height: 400px !important;
+} 
+
 .smallvideo{
-  height: 150px !important;
+  height: 175px !important;
 }
 
 .stemVideo{
@@ -375,17 +377,21 @@ ul {
     align-content: center !important;
     justify-content: center !important;
   }
-  .MuiBox-root-93,
-  .jss93{
-    margin: 15px auto !important;
-  }
+  
   .vertVideo{
-    max-width: 80% !important;
-    margin: 10px auto !important;
+    max-width: 100% !important;
+    margin: 10px auto !important;     
+    padding: 5px 10px !important;
+  }
+
+  .vertVideo .MuiBox-root-94,
+  .vertVideo .jss94{    
+    padding: 5px !important;
   }
 
   .vertVideo .MuiCardMedia-media{
     width: 100% !important;
+    height: 175px !important;
   }
 
   .shomob.MuiCardActions-root{
@@ -397,12 +403,23 @@ ul {
     margin: 5px 0 !important;
   }
 
+  .MuiBox-root-92,
+  .jss92{
+    margin-bottom: 80px !important;
+  }
+
   .MuiBox-root-96,
   .jss96{
-    max-width: 100% !important;
-    height: 250px !important;
-    margin: auto !important;    
+    max-width: 35% !important;
+    height: 150px !important; 
+    position: relative;      
+    bottom: -75px !important;
   }
+  .MuiBox-root-97,
+  .jss97{
+    padding: 5px !important;
+  }
+
   .MuiBox-root-103,
   .jss103{
     height: 450px !important;
@@ -507,11 +524,6 @@ ul {
   }
   .react-multiple-carousel__arrow::before {
     font-size: 15px;
-  }
-
-  .MuiBox-root-92,
-  .jss92{
-    display: block !important;
   }
   
 }

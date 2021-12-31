@@ -69,10 +69,9 @@ const Courses = (props) => {
                     <Card>
                       <CardMedia
                         component="video"
-                        alt="Ontatio Virtual Schoool"
-                        src={learn.home_learning_video}
-                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Math.mov"
-                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Math.webm"
+                        alt="Ontario Virtual Schoool"
+                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mp4"
+                        image="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mov"
                         title="Ontatio Virtual Schoool"
                         autoPlay
                         muted
@@ -100,15 +99,14 @@ const Courses = (props) => {
                     <Card className="smallvideo">
                       <CardMedia
                         component="video"
-                        alt="Ontatio Virtual Schoool"
+                        alt="Ontario Virtual Schoool"
                         width="100%"
-                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mp4"
-                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mov"
-                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.webm"
+                        image={learn.home_learning_video}
+                        src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Math.mov"
                         title="Ontario Virtual Schoool"
                         autoPlay
                         muted
-                        width="200px"
+                        height="100%"
                         loop={1}
                         autopause={0}
                         allow="autoplay"
