@@ -67,7 +67,7 @@ const Courses = (props) => {
                 <Box component={CardContent}>
                   <Box border={`1px solid ${theme.palette.divider}`}>
                     <Card>
-                      <CardMedia
+                      {/* <CardMedia
                         component="video"
                         alt="Ontario Virtual Schoool"
                         src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mp4"
@@ -81,7 +81,22 @@ const Courses = (props) => {
                         autopause={0}
                         allow="autoplay"
                         playsInline
-                      />
+                      /> */}
+
+                      <video class="MuiCardMedia-root MuiCardMedia-media" autoPlay muted loop playsInline>
+                        <source
+                          src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mp4"
+                          type="video/mp4"
+                        />
+                        <source
+                          src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mov"
+                          type="video/mov"
+                        />
+                        <source
+                          src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.webm"
+                          type="video/webm"
+                        />
+                      </video>
                     </Card>
                   </Box>
                 </Box>
