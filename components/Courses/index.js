@@ -83,7 +83,13 @@ const Courses = (props) => {
                         playsInline
                       /> */}
 
-                      <video class="MuiCardMedia-root MuiCardMedia-media" autoPlay muted loop playsInline>
+                      <video
+                        class="MuiCardMedia-root MuiCardMedia-media"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        controls={false}>
                         <source
                           src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Labster.mp4"
                           type="video/mp4"

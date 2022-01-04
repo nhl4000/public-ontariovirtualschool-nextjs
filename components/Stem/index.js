@@ -65,7 +65,7 @@ const Stem = (props) => {
                 borderRadius={3}
                 data-aos={isMd ? "fade-right" : "fade-up"}>
                 <Box component={CardContent}>
-                  <Box border={`1px solid ${theme.palette.divider}`}>
+                  <Box border={`1px solid ${theme.palette.divider}`} sx={{ height: "380px" }}>
                     <Card>
                       <CardMedia
                         component="iframe"
@@ -92,8 +92,7 @@ const Stem = (props) => {
                 color="primary"
                 size="large"
                 endIcon={<KeyboardArrowDownIcon />}
-                href="https://www.ontariovirtualschool.ca/register-online/"
-              >
+                href="https://www.ontariovirtualschool.ca/register-online/">
                 REGISTER NOW
               </Button>
             </Box>
