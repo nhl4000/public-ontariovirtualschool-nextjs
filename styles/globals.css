@@ -222,9 +222,11 @@ ul {
   border-radius: 25px !important;
 }
 
-.jss21 .MuiButton-root,
-.MuiBox-root-21 .MuiButton-root {
+.shomob .MuiButton-root,
+.shodesk .MuiButton-root {
   border-radius: 4px !important;
+  text-align: center !important;
+  padding: 5px !important;
 }
 
 .MuiTypography-root li {
@@ -448,9 +450,18 @@ ul {
 }
 @media screen and (max-width: 600px) {
   .TeamSlider li {
-    max-width: 90% !important;
+    max-width: 100% !important;
     margin: auto !important;
   }
+  .TeamSlider li .MuiCardMedia-root {
+    background-size: contain !important;
+    margin: auto !important;
+  }
+  .TeamSlider li .MuiTypography-body1 {
+    max-width: 65% !important;
+    margin: auto !important;
+  }
+
   .jss71 .MuiInputBase-input,
   .MuiBox-root-71 .MuiInputBase-input {
     padding: 10px !important;

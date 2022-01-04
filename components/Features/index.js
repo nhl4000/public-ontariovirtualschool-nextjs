@@ -54,19 +54,18 @@ const Features = (props) => {
                         <Button
                           component={"a"}
                           href={"#"}
-                          target={"_blank"}
                           variant="contained"
                           color="primary"
                           size="large"
                           margin={"10px"}
-                          fullWidth={!isMd}>
+                          fullWidth={!isMd}
+                          href="https://www.ontariovirtualschool.ca/register-online/">
                           REGISTER NOW
                         </Button>
                         &nbsp;
                         <Button
                           component={"a"}
-                          href={"#"}
-                          target={"_blank"}
+                          href={"#team"}
                           variant="contained"
                           color="secondary"
                           size="large"

@@ -64,8 +64,9 @@ const About = (props) => {
                   color="primary"
                   size="large"
                   fullWidth={!isMd}
-                  marginTop={{ xs: 1, sm: 0 }}
-                  marginLeft={{ sm: 2 }}>
+                  marginLeft={{ sm: 2 }}
+                  href="https://www.ontariovirtualschool.ca/register-online/"
+                >
                   REGISTER NOW
                 </Box>
               </Box>

@@ -34,7 +34,7 @@ const Team = (props) => {
   const [teams, setTeams] = useState(props.staff);
 
   return (
-    <Container style={{ margin: "0 auto" }}>
+    <Container id="team" style={{ margin: "0 auto" }}>
       <Box style={{ textAlign: "center", margin: "0 auto", padding: 0 }}>
         <Typography
           style={{
