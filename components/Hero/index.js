@@ -1,22 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import Typed from "react-typed";
-// import { Global, css } from "frontity";
 import styles from "./Hero.module.css";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import RocketIllustration from "../../svg/illustrations/Rocket";
-import TextField from "@mui/material/TextField";
-import SearchIcon from "@mui/icons-material/Search";
-import InputAdornment from "@mui/material/InputAdornment";
-import IconButton from "@mui/material/IconButton";
 import PlayCircleFilledOutlinedIcon from "@mui/icons-material/PlayCircleFilledOutlined";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Container from "../common/Container";
+import Search from "../Search";
 
 const Hero = (props) => {
   const theme = useTheme();
@@ -43,7 +38,7 @@ const Hero = (props) => {
                 <Typography
                   variant="h2"
                   color="#00000"
-                  style={{ fontWeight: 700, color: '#3A3A3A' }}
+                  style={{ fontWeight: 700, color: "#3A3A3A" }}
                   dangerouslySetInnerHTML={{
                     __html: props.heroPost.title.rendered,
                   }}
@@ -64,27 +59,7 @@ const Hero = (props) => {
                     __html: props.heroPost.content.rendered,
                   }}
                 />
-                <Box>
-                  <TextField
-                    id="standard-search"
-                    label="Seach for courses"
-                    type="search"
-                    InputProps={{
-                      endAdornment: (
-                        <InputAdornment position={"start"}>
-                          <IconButton
-                            className={styles.NavSearch}
-                            style={{ color: "#FFF", backgroundColor: "#aa0303" }}>
-                            <SearchIcon />
-                          </IconButton>
-                        </InputAdornment>
-                      ),
-                    }}
-                  />
-                  <Button className={styles.HeroBtn} fullWidth={!isMd}>
-                    REGISTER NOW
-                  </Button>
-                </Box>
+                <Search />
               </Box>
             </Box>
             <Box
@@ -105,7 +80,7 @@ const Hero = (props) => {
                     image={play ? null : video}
                     title="Ontario Virtual School"
                     style={{ backgroundColor: "#f7f9fc" }}
-                  // autoPlay
+                    // autoPlay
                   />
                 </Card>
                 <PlayCircleFilledOutlinedIcon

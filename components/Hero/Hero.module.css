@@ -7,7 +7,6 @@
   color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
   z-index: 1;
-
 }
 .posterImg {
   position: absolute;
@@ -16,7 +15,7 @@
   height: 100%;
 }
 
-.heroWrapper .subtitle p{
+.heroWrapper .subtitle p {
   font-size: 1.1rem !important;
   line-height: 1.4 !important;
 }
@@ -37,7 +36,7 @@
   z-index: 10;
   box-shadow: none;
 }
-.HeroImg .css-1okhp2l-MuiPaper-root-MuiCard-root {
+.HeroImg .MuiCard-root {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -45,24 +44,21 @@
   background-color: #f7f9fc !important;
   z-index: 100;
 }
+
 .HeroClose {
   cursor: pointer !important;
 }
+
 .HeroBtn {
-  margin-top: 10px !important;
-  background-color: #aa0303 !important;
-  color: #ffffff !important;
+  margin-top: 10px;
+  background-color: #aa0303;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 450px) {
   .HeroBtn {
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-    padding: 15px 25px !important;
-  }
-}
-@media screen and (max-width: 450px) {
-  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-    width: 100% !important;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 15px 25px;
   }
 }

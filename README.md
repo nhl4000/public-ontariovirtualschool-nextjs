@@ -1,10 +1,10 @@
 ## To-Do:
 
-1. `_app.js` contains a bunch of CSS imports for the different components. These should be replaced with [Component-Level CSS](https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css) (by importing module.css files within the component's file). I did the "Schools" component as an example for you.
+0. `globals.css` replace the hardcoded CSS rules for the fixed-generated selector with proper CSS rules.
 
-2. CSS Tweaks for UI/UX
+1. `_app.js` contains a bunch of CSS imports for the different components. These should be replaced with [Component-Level CSS](https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css) (by importing module.css files within the component's file).
 
-3. JSON Payload from WP Endpoint can be reduced in size (remove unnecessary unused fields) + cached.
+2. JSON Payload from WP Endpoint can be reduced in size (remove unnecessary unused fields) + cached.
 
 ## Commands
 
@@ -12,7 +12,7 @@
 
 - installs all the project dependencies
 
-`yarn dev`
+`yarn dev` / `npm run dev`
 
 - Runs `next dev'
 - Server: http://localhost:3000

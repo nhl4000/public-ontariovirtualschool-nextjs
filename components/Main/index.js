@@ -20,6 +20,7 @@ import Link from "@material-ui/core/Link";
 import PropTypes from "prop-types";
 import Container from "../common/Container";
 import { ExitToApp } from "@material-ui/icons";
+import Search from "../Search";
 
 // TODO
 // import "./Main.css";
@@ -113,7 +114,7 @@ const Main = (props) => {
                         return (
                           <Grid item xs={6} sm={6} md={3} key={index} data-aos={"fade-up"}>
                             <Box
-                              component={"a"}
+                              component={"div"}
                               href={"#0"}
                               display={"block"}
                               width={"100%"}
@@ -129,50 +130,53 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                <Link
+                                  href={
+                                    "https://www.ontariovirtualschool.ca/courses/" +
+                                    course.title.rendered.toString().toLowerCase() +
+                                    "/"
+                                  }>
                                   <CardMedia
                                     image={course.yoast_head_json.og_image[0].url}
                                     title={course.title.rendered}
                                     style={{
                                       height: 240,
                                     }}
+                                    component="img"
                                   />
-                                </Link>
-                                <Box component={CardContent} position="relative">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Box component={CardContent} position="relative">
                                     <Typography
-                                      //   variant={"h6"}
+                                      variant={"body2"}
                                       gutterBottom
                                       fontWeight={500}
                                       align={"left"}
                                       dangerouslySetInnerHTML={{ __html: course.title.rendered }}
                                     />
-                                  </Link>
-                                  <Typography
-                                    //   variant={"p"}
-                                    gutterBottom
-                                    fontWeight={500}
-                                    style={{ color: "#aa0303" }}
-                                    className="itemPrice"
-                                    dangerouslySetInnerHTML={{ __html: course.home_course_price }}
-                                  />
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Typography
+                                      variant={"body2"}
+                                      gutterBottom
+                                      fontWeight={500}
+                                      style={{ color: "#aa0303" }}
+                                      className="itemPrice"
+                                      dangerouslySetInnerHTML={{ __html: course.home_course_price }}
+                                    />
+                                    {/* <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}> */}
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
                                       color="textSecondary"
                                       dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
                                     />
-                                  </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    {/* </Link> */}
+                                    {/* <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}> */}
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
                                       color="textSecondary"
                                       dangerouslySetInnerHTML={{ __html: course.home_field }}
                                     />
-                                  </Link>
-                                </Box>
+                                  </Box>
+                                </Link>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
                                   <Button color="primary" variant="contained" size="small" fullWidth>
@@ -230,7 +234,7 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                   <CardMedia
                                     image={course.yoast_head_json.og_image[0].url}
                                     title={course.title.rendered}
@@ -241,7 +245,7 @@ const Main = (props) => {
                                 </Link>
                                 <Box position="relative">
                                   <CardContent>
-                                    <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                       <Typography
                                         variant={"h6"}
                                         gutterBottom
@@ -258,7 +262,7 @@ const Main = (props) => {
                                       className="itemPrice"
                                       dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                     />
-                                    <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                       <Typography
                                         align={"left"}
                                         variant={"body2"}
@@ -266,7 +270,7 @@ const Main = (props) => {
                                         dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
                                       />
                                     </Link>
-                                    <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                    <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                       <Typography
                                         align={"left"}
                                         variant={"body2"}
@@ -333,7 +337,7 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                   <CardMedia
                                     image={course.yoast_head_json.og_image[0].url}
                                     title={course.title.rendered}
@@ -343,7 +347,7 @@ const Main = (props) => {
                                   />
                                 </Link>
                                 <Box component={CardContent} position="relative">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       variant={"h6"}
                                       gutterBottom
@@ -360,7 +364,7 @@ const Main = (props) => {
                                     className="itemPrice"
                                     dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                   />
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
@@ -368,7 +372,7 @@ const Main = (props) => {
                                       dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
                                     />
                                   </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
@@ -434,7 +438,7 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                   <CardMedia
                                     image={course.yoast_head_json.og_image[0].url}
                                     title={course.title.rendered}
@@ -444,7 +448,7 @@ const Main = (props) => {
                                   />
                                 </Link>
                                 <Box component={CardContent} position="relative">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       variant={"h6"}
                                       gutterBottom
@@ -461,7 +465,7 @@ const Main = (props) => {
                                     className="itemPrice"
                                     dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                   />
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
@@ -469,7 +473,7 @@ const Main = (props) => {
                                       dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
                                     />
                                   </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
@@ -536,7 +540,7 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                   <CardMedia
                                     image={course.yoast_head_json.og_image[0].url}
                                     title={course.title.rendered}
@@ -546,7 +550,7 @@ const Main = (props) => {
                                   />
                                 </Link>
                                 <Box component={CardContent} position="relative">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       variant={"h6"}
                                       gutterBottom
@@ -563,7 +567,7 @@ const Main = (props) => {
                                     className="itemPrice"
                                     dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                   />
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
@@ -571,7 +575,7 @@ const Main = (props) => {
                                       dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
                                     />
                                   </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
@@ -612,6 +616,7 @@ const Main = (props) => {
               <Grid container spacing={2}>
                 {courses.map((course, index) =>
                   (() => {
+                    return false;
                     switch (course.home_course_grade) {
                       case "Upgrade":
                         return (
@@ -637,7 +642,7 @@ const Main = (props) => {
                                 borderRadius={3}
                                 display={"flex"}
                                 flexDirection={"column"}>
-                                <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                   <CardMedia
                                     image={course.yoast_head_json.og_image[0].url}
                                     title={course.title.rendered}
@@ -647,7 +652,7 @@ const Main = (props) => {
                                   />
                                 </Link>
                                 <Box component={CardContent} position="relative">
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       variant={"h6"}
                                       gutterBottom
@@ -664,7 +669,7 @@ const Main = (props) => {
                                     className="itemPrice"
                                     dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                   />
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
@@ -672,7 +677,7 @@ const Main = (props) => {
                                       dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
                                     />
                                   </Link>
-                                  <Link href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
+                                  <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
@@ -711,33 +716,7 @@ const Main = (props) => {
             </TabPanel>
           </Paper>
         </Box>
-        <Box marginTop={5} display={"flex"} justifyContent={"center"} className="boxBtnSearch">
-          <TextField
-            id="standard-search"
-            label="Search for course"
-            type="search"
-            className="SearchMargin"
-            InputProps={{
-              endAdornment: (
-                <InputAdornment >
-                  <IconButton style={{ color: "#FFF", backgroundColor: "#aa0303", height: "40px", width: "40px" }}>
-                    <SearchIcon style={{ height: "30px", width: "30px" }} />
-                  </IconButton>
-                </InputAdornment>
-              ),
-            }}
-          />
-          <Button
-            component={"a"}
-            href={"https://material-ui.com/store/items/webbee-landing-page/"}
-            target={"_blank"}
-            variant="contained"
-            color="primary"
-            size="medium"
-            className="regBtn">
-            REGISTER NOW
-          </Button>
-        </Box>
+        <Search justifyContent={"center"} />
       </Container>
     </Box>
   );

@@ -16,7 +16,6 @@ import Button from "@material-ui/core/Button";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import styles from "./Reviews.module.css";
 
 const Reviews = (props) => {
   const theme = useTheme();

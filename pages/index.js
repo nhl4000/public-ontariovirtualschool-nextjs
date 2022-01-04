@@ -97,23 +97,23 @@ export default function Home(props) {
       </Head>
 
       <NoSsr>
-        <TagManager />
-        <Pixel />
-        <Tracking />
-        <ChatSupport />
+        {/* <TagManager /> */}
+        {/* <Pixel /> */}
+        {/* <Tracking /> */}
+        {/* <ChatSupport /> */}
         <Header data={props.header.html} />
 
         {props.error && <h3>{props.error}</h3>}
-        <section style={{ backgroundColor: "#f7f9fc" }}>
-          {props.home && <Hero heroPost={props.home.hero} />}
-        </section>
+        <section style={{ backgroundColor: "#f7f9fc" }}>{props.home && <Hero heroPost={props.home.hero} />}</section>
         {props.home && <Statistics statsPost={props.home.statistics} />}
         {props.home && <Featured featured={props.home.featured} />}
         {props.home && <Reviews reviews={props.home.reviews} />}
+
         <section style={{ backgroundColor: "#f7f9fc" }}>
           {props.home && <Main courses={props.home.courses} />}
           {props.home && <Register steps={props.home.steps} />}
         </section>
+
         {props.home && <About about={props.home.about} />}
         {props.home && <Courses learning={props.home.learning} />}
         {props.home && <Stem stem={props.home.stem} />}
@@ -128,7 +128,7 @@ export default function Home(props) {
       </NoSsr>
 
       <a id="top-button" aria-label="Back to Top" title="back to top" onClick={() => window.scrollTo(0, 0)}></a>
-    </div >
+    </div>
   );
 }
 
@@ -179,7 +179,7 @@ export async function getStaticProps() {
       home: {
         hero: homeData["home_hero"][0],
         statistics: homeData["home_statistics"],
-        featured: homeData['home_featured'],
+        featured: homeData["home_featured"],
         reviews: homeData["home_written_reviews"],
         courses: homeData["home_our_courses"],
         steps: homeData["home_reg_steps"],

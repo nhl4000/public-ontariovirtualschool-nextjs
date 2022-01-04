@@ -1,19 +1,24 @@
-.react-multiple-carousel__arrow--left {
+.home_page_reviews {
+  background: yellow;
+}
+.home_page_reviews > .react-multiple-carousel__arrow--left {
   left: calc(0% + 1px);
 }
-.react-multiple-carousel__arrow--right {
+.home_page_reviews > .react-multiple-carousel__arrow--right {
   right: calc(0% + 1px);
 }
-.css-13i4rnv-MuiGrid-root .MuiCard-root.MuiBox-root {
+.home_page_reviews.css-13i4rnv-MuiGrid-root .MuiCard-root.MuiBox-root {
   margin: auto !important;
 }
-
+/* .home_page_reviews iframe {
+  height: 100%;
+} */
 @media screen and (max-width: 450px) {
-  .react-multiple-carousel__arrow {
+  .home_page_reviews > .react-multiple-carousel__arrow {
     min-width: 25px;
     min-height: 25px;
   }
-  .react-multiple-carousel__arrow::before {
+  .home_page_reviews > .react-multiple-carousel__arrow::before {
     font-size: 15px;
   }
 }
