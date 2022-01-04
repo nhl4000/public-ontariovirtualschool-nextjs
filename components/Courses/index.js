@@ -31,7 +31,7 @@ const Courses = (props) => {
                 style={{
                   textTransform: "uppercase",
                   fontWeight: "medium",
-                  color: "#f9b934"
+                  color: "#f9b934",
                 }}
                 gutterBottom
                 align={"center"}>
@@ -75,6 +75,7 @@ const Courses = (props) => {
                         title="Ontatio Virtual Schoool"
                         autoPlay
                         muted
+                        controls
                         width="200px"
                         loop={1}
                         autopause={0}
