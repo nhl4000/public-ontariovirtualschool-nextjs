@@ -53,7 +53,6 @@ const Features = (props) => {
                       <Box xs={12} marginTop={4}>
                         <Button
                           component={"a"}
-                          href={"#"}
                           variant="contained"
                           color="primary"
                           size="large"

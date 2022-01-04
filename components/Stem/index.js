@@ -86,7 +86,6 @@ const Stem = (props) => {
             <Box marginTop={3} display={"flex"} justifyContent={"center"}>
               <Button
                 component={"a"}
-                href={"#"}
                 target={"_blank"}
                 variant="contained"
                 color="primary"

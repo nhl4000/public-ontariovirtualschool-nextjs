@@ -84,7 +84,7 @@ const Courses = (props) => {
                       /> */}
 
                       <video
-                        class="MuiCardMedia-root MuiCardMedia-media"
+                        className="MuiCardMedia-root MuiCardMedia-media"
                         autoPlay
                         muted
                         loop
@@ -142,7 +142,6 @@ const Courses = (props) => {
             <Box marginTop={3} display={"flex"} justifyContent={"center"}>
               <Button
                 component={"a"}
-                href={"#"}
                 target={"_blank"}
                 variant="contained"
                 color="primary"
