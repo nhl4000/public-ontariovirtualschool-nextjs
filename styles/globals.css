@@ -218,17 +218,6 @@ ul {
   line-height: 15px !important;
 }
 
-.MuiButton-root {
-  border-radius: 25px !important;
-}
-
-.shomob .MuiButton-root,
-.shodesk .MuiButton-root {
-  border-radius: 4px !important;
-  text-align: center !important;
-  padding: 5px !important;
-}
-
 .MuiTypography-root li {
   margin-bottom: 20px !important;
 }

@@ -9,6 +9,7 @@ import styles from "./Search.module.css";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import IconButton from "@mui/material/IconButton";
+import Router from "next/router";
 
 const Search = (props) => {
   const theme = useTheme();
@@ -62,7 +63,8 @@ const Search = (props) => {
   }, []);
 
   const searchHandler = function () {
-    console.log(searchTerm);
+    // console.log(searchTerm);
+    Router.push("https://www.ontariovirtualschool.ca/courses/" + searchTerm.toLowerCase() + "/");
   };
 
   return (

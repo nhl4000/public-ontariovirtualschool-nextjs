@@ -48,8 +48,9 @@ export default function Home(props) {
         <link rel="icon" href="/images/favicon.png" />
         <link rel="stylesheet" href="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/css/header.css" />
 
-        {/* <script src="/js/script.js"></script> */}
+        {/* <script src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/inc/courses/js/add-to-cart.js?ver=5.7.4"></script> */}
         <script dangerouslySetInnerHTML={{ __html: process.env.homeScript }}></script>
+        <script dangerouslySetInnerHTML={{ __html: process.env.addToCartScript }}></script>
 
         <link
           media="all"

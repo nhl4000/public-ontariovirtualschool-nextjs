@@ -21,6 +21,7 @@ import PropTypes from "prop-types";
 import Container from "../common/Container";
 import { ExitToApp } from "@material-ui/icons";
 import Search from "../Search";
+import styles from "./Main.module.css";
 
 // TODO
 // import "./Main.css";
@@ -160,15 +161,12 @@ const Main = (props) => {
                                       className="itemPrice"
                                       dangerouslySetInnerHTML={{ __html: course.home_course_price }}
                                     />
-                                    {/* <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}> */}
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
                                       color="textSecondary"
                                       dangerouslySetInnerHTML={{ __html: course.home_course_grade }}
                                     />
-                                    {/* </Link> */}
-                                    {/* <Link href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}> */}
                                     <Typography
                                       align={"left"}
                                       variant={"body2"}
@@ -178,39 +176,39 @@ const Main = (props) => {
                                   </Box>
                                 </Link>
                                 <Box flexGrow={1} />
-                                <Box component={CardActions} justifyContent={"center"} className="shomob">
+                                <Box
+                                  component={CardActions}
+                                  justifyContent={"center"}
+                                  className={styles.buttons}
+                                  textAlign={"center"}>
                                   <Button
                                     color="primary"
                                     variant="contained"
                                     size="small"
-                                    fullWidth
-                                    href="https://www.ontariovirtualschool.ca/register-online/">
-                                    Register Now
-                                  </Button>
-                                </Box>
-                                <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button
-                                    color="secondary"
-                                    variant="contained"
-                                    size="small"
-                                    fullWidth
-                                    href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
-                                    View Course Outline
-                                  </Button>
-                                </Box>
-                                <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button
-                                    color="primary"
-                                    variant="contained"
-                                    size="small"
-                                    href="https://www.ontariovirtualschool.ca/register-online/">
-                                    Register Now
+                                    className="btnAddtoCart"
+                                    data-id={course.id}
+                                    data-product-id={course.id}
+                                    data-title={
+                                      course.title.rendered.toString().trim() +
+                                      ", " +
+                                      course.home_course_grade.toString().trim() +
+                                      " " +
+                                      course.home_field.toString().trim()
+                                    }
+                                    onClick={(e) => window["atc_button"](e.target)}
+                                    data-is-upgrade="0"
+                                    data-textbook="0">
+                                    Add to Cart
                                   </Button>
                                   <Button
                                     color="secondary"
                                     variant="contained"
                                     size="small"
-                                    href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
+                                    href={
+                                      "https://www.ontariovirtualschool.ca/courses/" +
+                                      course.title.rendered.toString().toLowerCase() +
+                                      "/"
+                                    }>
                                     View Course Outline
                                   </Button>
                                 </Box>
