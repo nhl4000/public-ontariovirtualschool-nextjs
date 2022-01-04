@@ -125,7 +125,8 @@ const Courses = (props) => {
                 variant="contained"
                 color="primary"
                 size="large"
-                endIcon={<KeyboardArrowDownIcon />}>
+                endIcon={<KeyboardArrowDownIcon />}
+                href="https://www.ontariovirtualschool.ca/register-online/">
                 REGISTER NOW
               </Button>
             </Box>

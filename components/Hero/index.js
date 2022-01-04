@@ -26,7 +26,7 @@ const Hero = (props) => {
   const [open, setOpen] = React.useState(true);
   const [play, setCheck] = React.useState(true);
   const video =
-    props.heroPost?.herovid + "?title=0&byline=0&portrait=0&color=ffffff&autoplay=0&dnt=0&loop=1&autopause=0&mute";
+    props.heroPost?.herovid + "?title=0&byline=0&portrait=0&color=ffffff&autoplay=0&dnt=0&loop=0&autopause=0&mute";
   const anim = props.heroPost?.animated.split(",");
 
   return (
@@ -81,7 +81,7 @@ const Hero = (props) => {
                       ),
                     }}
                   />
-                  <Button className={styles.HeroBtn} fullWidth={!isMd}>
+                  <Button className={styles.HeroBtn} fullWidth={!isMd} href="https://www.ontariovirtualschool.ca/register-online/">
                     REGISTER NOW
                   </Button>
                 </Box>

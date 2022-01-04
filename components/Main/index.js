@@ -175,20 +175,20 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                  <Button color="primary" variant="contained" size="small" fullWidth href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
+                                  <Button color="primary" variant="contained" size="small" href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
-                                  <Button color="secondary" variant="contained" size="small">
+                                  <Button color="secondary" variant="contained" size="small" href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
@@ -278,20 +278,20 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                  <Button color="primary" variant="contained" size="small" fullWidth href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
+                                  <Button color="primary" variant="contained" size="small" href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
-                                  <Button color="secondary" variant="contained" size="small">
+                                  <Button color="secondary" variant="contained" size="small" href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
@@ -379,20 +379,20 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                  <Button color="primary" variant="contained" size="small" fullWidth href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
+                                  <Button color="primary" variant="contained" size="small" href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
-                                  <Button color="secondary" variant="contained" size="small">
+                                  <Button color="secondary" variant="contained" size="small" href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
@@ -480,20 +480,20 @@ const Main = (props) => {
                                 </Box>
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                  <Button color="primary" variant="contained" size="small" fullWidth href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                  <Button color="secondary" variant="contained" size="small" fullWidth href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
+                                  <Button color="primary" variant="contained" size="small" href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
-                                  <Button color="secondary" variant="contained" size="small">
+                                  <Button color="secondary" variant="contained" size="small" href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
@@ -581,21 +581,21 @@ const Main = (props) => {
                                   </Link>
                                 </Box>
                                 <Box flexGrow={1} />
-                                <Box component={CardActions} justifyContent={"center"} className="shomob">
+                                <Box component={CardActions} justifyContent={"center"} className="shomob" href="https://www.ontariovirtualschool.ca/register-online/">
                                   <Button color="primary" variant="contained" size="small" fullWidth>
                                     Register Now
                                   </Button>
                                 </Box>
-                                <Box component={CardActions} justifyContent={"center"} className="shomob">
+                                <Box component={CardActions} justifyContent={"center"} className="shomob" href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                   <Button color="secondary" variant="contained" size="small" fullWidth>
                                     View Course Outline
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
+                                  <Button color="primary" variant="contained" size="small" href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
-                                  <Button color="secondary" variant="contained" size="small">
+                                  <Button color="secondary" variant="contained" size="small" href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
@@ -682,21 +682,21 @@ const Main = (props) => {
                                   </Link>
                                 </Box>
                                 <Box flexGrow={1} />
-                                <Box component={CardActions} justifyContent={"center"} className="shomob">
+                                <Box component={CardActions} justifyContent={"center"} className="shomob" href="https://www.ontariovirtualschool.ca/register-online/">
                                   <Button color="primary" variant="contained" size="small" fullWidth>
                                     Register Now
                                   </Button>
                                 </Box>
-                                <Box component={CardActions} justifyContent={"center"} className="shomob">
+                                <Box component={CardActions} justifyContent={"center"} className="shomob" href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                   <Button color="secondary" variant="contained" size="small" fullWidth>
                                     View Course Outline
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
-                                  <Button color="primary" variant="contained" size="small">
+                                  <Button color="primary" variant="contained" size="small" href="https://www.ontariovirtualschool.ca/register-online/">
                                     Register Now
                                   </Button>
-                                  <Button color="secondary" variant="contained" size="small">
+                                  <Button color="secondary" variant="contained" size="small" href={'https://www.ontariovirtualschool.ca/courses/' + course.title.rendered}>
                                     View Course Outline
                                   </Button>
                                 </Box>
@@ -729,7 +729,7 @@ const Main = (props) => {
           />
           <Button
             component={"a"}
-            href={"https://material-ui.com/store/items/webbee-landing-page/"}
+            href={"https://www.ontariovirtualschool.ca/register-online/"}
             target={"_blank"}
             variant="contained"
             color="primary"
@@ -738,8 +738,8 @@ const Main = (props) => {
             REGISTER NOW
           </Button>
         </Box>
-      </Container>
-    </Box>
+      </Container >
+    </Box >
   );
 };
 
