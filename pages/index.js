@@ -27,6 +27,20 @@ import fs from "fs";
 import { ChatSupport, Schema, TagManager, Pixel, Tracking } from "../components/Head";
 
 export default function Home(props) {
+  React.useEffect(() => {
+    async function fetchCourseCatalog() {
+      fetch("/api/courses")
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (r) {
+          window["course_catalog"] = r;
+          course_catalog = r;
+        });
+    }
+    fetchCourseCatalog();
+  }, []);
+
   return (
     <div>
       <Head>

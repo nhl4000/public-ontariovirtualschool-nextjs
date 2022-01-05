@@ -237,10 +237,10 @@
 
 let ovs_customer_cookie = null;
 let modal;
-var courses_catalog = {
-  url: "https://www.ontariovirtualschool.ca/wp-content/cache/1/courses/build_courses_catalog.json",
-};
-let course_catalog = -1;
+// var courses_catalog = {
+//   url: "https://www.ontariovirtualschool.ca/wp-content/cache/1/courses/build_courses_catalog.json",
+// };
+// let course_catalog = -1;
 let footer_buttons = false;
 
 function currencyFormat(num) {

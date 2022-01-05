@@ -109,7 +109,7 @@ const Main = (props) => {
                     if (typeof course.yoast_head_json.og_image === "undefined") {
                       return false;
                     }
-
+                    console.log(course);
                     switch (course.home_course_grade) {
                       case "Grade 12":
                         return (
