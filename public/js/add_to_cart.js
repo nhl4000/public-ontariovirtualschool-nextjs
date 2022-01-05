@@ -237,10 +237,6 @@
 
 let ovs_customer_cookie = null;
 let modal;
-// var courses_catalog = {
-//   url: "https://www.ontariovirtualschool.ca/wp-content/cache/1/courses/build_courses_catalog.json",
-// };
-// let course_catalog = -1;
 let footer_buttons = false;
 
 function currencyFormat(num) {
@@ -269,7 +265,7 @@ function loadFooterButtons() {
   });
 
   modal.addFooterBtn("Checkout", "btn btn-red tingle-btn--pull-right", function () {
-    location.href = "/register-online/checkout/";
+    location.href = "https://www.ontariovirtualschool.ca/register-online/checkout/";
   });
 }
 
@@ -382,12 +378,8 @@ function startModal() {
 
 function addToCart(f, t = 0, u = 0) {
   startModal();
-  //return false;
-  console.log(f);
+
   let product_id = f.trim();
-  //if (f instanceof HTMLElement) { // why do I do this? <- causes reflow problems
-  //	product_id = f.getElementsByClassName("course_product_id")[0].value;
-  //}
 
   if (course_catalog != -1) {
     if (!course_catalog[product_id]) {
@@ -432,7 +424,6 @@ function addToCart(f, t = 0, u = 0) {
       }
 
       products = products.filter((elem, pos, array) => {
-        //console.log(elem.substring(1, elem.indexOf("-")));
         return array.indexOf(elem) == pos;
       });
       ovs_customer_cookie = products.join(",");

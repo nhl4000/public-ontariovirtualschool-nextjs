@@ -22,7 +22,7 @@ const Hero = (props) => {
   const [play, setCheck] = React.useState(true);
   const video =
     props.heroPost?.herovid + "?title=0&byline=0&portrait=0&color=ffffff&autoplay=0&dnt=0&loop=0&autopause=0&mute";
-  const anim = props.heroPost?.animated.split(",");
+  const anim = props.heroPost?.animated.toString().split(",");
 
   return (
     <Container className={styles.HeroWrapper}>
@@ -80,7 +80,7 @@ const Hero = (props) => {
                     image={play ? null : video}
                     title="Ontario Virtual School"
                     style={{ backgroundColor: "#f7f9fc" }}
-                  // autoPlay
+                    // autoPlay
                   />
                 </Card>
                 <PlayCircleFilledOutlinedIcon

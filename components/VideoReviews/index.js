@@ -65,7 +65,12 @@ export default function VideoReviews(props) {
                 display={"flex"}
                 flexDirection={"column"}
                 boxShadow={0}>
-                <Box className="vidRevBox" component={CardContent} display={"flex"} flexDirection={"column"} alignItems={"center"}>
+                <Box
+                  className="vidRevBox"
+                  component={CardContent}
+                  display={"flex"}
+                  flexDirection={"column"}
+                  alignItems={"center"}>
                   <Box marginBottom={1} display={"flex"} style={{ width: "100%" }} justifyContent={"space-between"}>
                     <FormatQuoteIcon fontSize="large" style={{ transform: "rotate(180deg)", color: "#377fff" }} />
                     <Box display="flex" alignItems={"flex-end"}>
@@ -91,7 +96,7 @@ export default function VideoReviews(props) {
                       width="90%"
                       frameBorder="0"
                       shadow="0"
-                      image={vrev.home_vr_video}
+                      image={vrev.home_vr_video[0]}
                       title={vrev.title.rendered}
                     />
                   </Card>

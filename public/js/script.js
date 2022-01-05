@@ -157,7 +157,6 @@ window.addEventListener("load", function () {
   }
 
   function remove_class(class_name) {
-    console.log("remove class" + class_name);
     let elems_switching = document.querySelectorAll("." + class_name);
     [].forEach.call(elems_switching, function (el) {
       el.classList.remove(class_name);
@@ -216,7 +215,6 @@ window.addEventListener("load", function () {
     let back_to_top_scrolling = false;
     window.addEventListener("scroll", function () {
       back_to_top_scrolling = true;
-      //console.log(back_to_top_scrolling);
       let e = document.documentElement.scrollTop;
       let back_to_top = document.getElementById("top-button");
       if (e < 1000) {
@@ -227,7 +225,6 @@ window.addEventListener("load", function () {
 
       setInterval(function () {
         if (back_to_top_scrolling) {
-          // console.log('hit');
           back_to_top_scrolling = false;
         }
       }, 2150);

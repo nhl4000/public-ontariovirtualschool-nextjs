@@ -1,4 +1,4 @@
-.HeroWrapper{
+.HeroWrapper {
   padding-top: 0 !important;
 }
 
@@ -20,8 +20,8 @@
 }
 
 .HeroWrapper .subtitle p {
-  font-size: 1.1rem ;
-  line-height: 1.4 ;
+  font-size: 1.1rem;
+  line-height: 1.4;
 }
 
 .open {
@@ -58,6 +58,16 @@
   background-color: #aa0303;
   color: #ffffff;
   border-radius: 25px;
+}
+
+.MuiTabs-indicator,
+.PrivateTabIndicator-colorPrimary {
+  background: #aa0303 !important;
+  background-color: #aa0303 !important;
+}
+.MuiCircularProgress-colorPrimary,
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #aa0303 !important;
 }
 
 @media screen and (min-width: 450px) {

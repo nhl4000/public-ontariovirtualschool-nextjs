@@ -3,6 +3,7 @@ let development = process.env.NODE_ENV !== "production";
 
 module.exports = {
   reactStrictMode: false,
+  swcMinify: true,
   env: {
     homeScript: fs.readFileSync("./public/js/script.js").toString(),
     addToCartScript: fs.readFileSync("./public/js/add_to_cart.js").toString(),

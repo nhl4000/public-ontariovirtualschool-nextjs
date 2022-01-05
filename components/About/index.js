@@ -67,8 +67,7 @@ const About = (props) => {
                   size="large"
                   fullWidth={!isMd}
                   marginLeft={{ sm: 2 }}
-                  href="https://www.ontariovirtualschool.ca/register-online/"
-                >
+                  href="https://www.ontariovirtualschool.ca/register-online/">
                   REGISTER NOW
                 </Box>
               </Box>
@@ -87,7 +86,7 @@ const About = (props) => {
               <CircularProgressWithLabel
                 size={200}
                 suffix="+"
-                subtext="Students in 2020"
+                subtext="Students in 2021"
                 textStyle={{ fontSize: 30, color: "#000" }}
                 value={studentCount}
                 inView={viewPortEntered}

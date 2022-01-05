@@ -37,9 +37,8 @@ const Statistics = (props) => {
                             <CountUp
                               redraw={false}
                               end={post.home_stats}
-                              // onEnd={viewPortEntered ? post.home_stats : 0}
                               start={0}
-                              className={"red-count-up"}
+                              style={{ color: "#aa0303" }}
                               suffix={"/5"}
                               decimals={1}
                               decimal="."
@@ -64,16 +63,12 @@ const Statistics = (props) => {
                               duration="1"
                               end={viewPortEntered ? 25000 : 0}
                               start={0}
-                              className={"red-count-up"}
+                              style={{ color: "#aa0303" }}
                               suffix={"+"}
                             />
                           </VisibilitySensor>
                           <br />
-                          <DoneAllIcon
-                            fontSize="large"
-                            style={{ color: "#f9b934" }}
-                          // className="red-count-up"
-                          />
+                          <DoneAllIcon fontSize="large" style={{ color: "#f9b934" }} />
                         </Box>
                       );
                     case 2:
@@ -85,22 +80,18 @@ const Statistics = (props) => {
                               duration="1"
                               end={viewPortEntered ? 98 : 0}
                               start={0}
-                              className={"red-count-up"}
+                              style={{ color: "#aa0303" }}
                               suffix={"%"}
                             />
                           </VisibilitySensor>
                           <br />
-                          <SchoolIcon
-                            fontSize="large"
-                            style={{ color: "#f9b934" }}
-                          // className="red-count-up"
-                          />
+                          <SchoolIcon fontSize="large" style={{ color: "#f9b934" }} />
                         </Box>
                       );
                   }
                 })()}
               </Typography>
-              <Typography align={"center"} variant="h6" gutterBottom color={'#3a3a3a'}>
+              <Typography align={"center"} variant="h6" gutterBottom color={"#3a3a3a"}>
                 {post.title.rendered}
               </Typography>
               <Typography

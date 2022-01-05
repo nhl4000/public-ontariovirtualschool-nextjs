@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import PropTypes from "prop-types";
 //import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTheme } from "@material-ui/core/styles";
@@ -14,12 +14,18 @@ import Container from "../common/Container";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import styles from "./Stem.module.css";
 
+import { useInView } from "react-intersection-observer";
+
 const Stem = (props) => {
   const [stems, setStems] = useState(props.stem);
 
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true,
+  });
+
+  const { ref, inView } = useInView({
+    threshold: 0.0,
   });
 
   return (
@@ -73,7 +79,7 @@ const Stem = (props) => {
                         alt="Ontatio Virtual Schoool"
                         height="100%"
                         width="100%"
-                        src={stem.home_stem_video}
+                        src={stem.home_stem_video[0]}
                         title="Ontario Virtual Schoool"
                         autoPlay
                         allow="autoplay"

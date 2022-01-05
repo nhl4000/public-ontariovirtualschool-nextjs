@@ -34,11 +34,16 @@ const Search = (props) => {
       ".MuiAutocomplete-inputRoot .MuiAutocomplete-input.MuiAutocomplete-input.MuiAutocomplete-input": {
         width: "unset",
       },
+      ".MuiButtonBase-root": {
+        borderRadius: "25px",
+        padding: "5px",
+      },
     },
   });
   const classes = useStyles();
 
   useEffect(() => {
+    let isMounted = true;
     async function fetchCourses() {
       fetch("/api/courses")
         .then(function (r) {
@@ -56,21 +61,26 @@ const Search = (props) => {
           res.sort(function (a, b) {
             return a.course_code.localeCompare(b.course_code);
           });
-          setCourses(res);
+          if (isMounted) {
+            setCourses(res);
+          }
         });
     }
     fetchCourses();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   const searchHandler = function () {
-    // console.log(searchTerm);
-    Router.push("https://www.ontariovirtualschool.ca/courses/" + searchTerm.toLowerCase() + "/");
+    if (searchTerm.length >= 5) {
+      Router.push("https://www.ontariovirtualschool.ca/courses/" + searchTerm.toLowerCase() + "/");
+    }
   };
 
   return (
     <Box display="flex" gap={2} {...props}>
       <Autocomplete
-        id="standard-search"
         freeSolo
         disableClearable
         filterOptions={(options, state) => {
@@ -99,7 +109,6 @@ const Search = (props) => {
             return result[1] !== -1;
           });
 
-          //   console.log(options, searchTerm);
           return [
             ...new Set(
               results.map(function (result) {

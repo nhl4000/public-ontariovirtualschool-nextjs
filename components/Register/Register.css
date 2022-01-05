@@ -149,6 +149,14 @@
 .vertList {
   display: none !important;
 }
+
+.vertList .MuiTimelineItem-alignLeft::before {
+  display: none !important;
+}
+.vertList li:last-child .MuiTimelineConnector-root {
+  display: none !important;
+}
+
 @media screen and (max-width: 700px) {
   .leftText {
     text-align: left !important;

@@ -1,5 +1,5 @@
 .SearchMargin {
-  margin-right: 10px !important;
+  margin-right: 10px;
 }
 .itemPrice {
   position: absolute;
@@ -7,65 +7,67 @@
   top: 10px;
 }
 .tabimg {
-  background-size: contain !important;
+  background-size: contain;
 }
 
 .tabcards h6 {
-  line-height: 1 !important;
-  font-size: 0.9em !important;
+  line-height: 1;
+  font-size: 0.9em;
 }
 .tabcards span {
-  font-size: 0.9em !important;
+  font-size: 0.9em;
 }
-.css-1624ae0-MuiPaper-root,
-.tabs,
-.MuiBox-root.css-19kzrtu {
-  background-color: transparent !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  padding: 10px 0 !important;
+.tabs {
+  background-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  padding: 10px 0;
 }
 .shomob {
-  display: none !important;
+  display: none;
 }
+.SearchMargin {
+  border: 1px solid #dddddd;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.SearchMargin .MuiInput-underline:before {
+  border: none;
+}
+.SearchMargin .MuiInputAdornment-root {
+  margin-top: -15px;
+}
+
+.SearchMargin .MuiInputLabel-formControl {
+  top: 20px;
+  left: 10px;
+  transform: none;
+}
+
 @media screen and (max-width: 450px) {
   .shomob {
-    width: 100% !important;
-    display: block !important;
+    width: 100%;
+    display: block;
   }
   .shodesk {
-    display: none !important;
+    display: none;
   }
   .SearchMargin {
-    border: 1px solid #dddddd !important;
-    border-radius: 25px !important;
-    margin-bottom: 10px !important;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    margin-bottom: 10px;
   }
-  .SearchMargin .MuiInput-underline:before{
-    border: none !important;
+  .SearchMargin .MuiInput-underline:before {
+    border: none;
   }
   .boxBtnSearch {
-    display: block !important;
+    display: block;
   }
   .regBtn {
-    margin: 10px auto !important;
-    width: 100% !important;
-  }
-  .css-1wf8b0h-MuiTabs-flexContainer {
-    display: block !important;
-    text-align: center;
-    align-items: center;
-  }
-  #tabs .css-jpln7h-MuiTabs-scroller {
-    white-space: normal !important;
-  }
-  .css-1x2ti7s-MuiButtonBase-root-MuiTab-root {
-    font-size: 0.8rem !important;
+    margin: 10px auto;
+    width: 100%;
   }
   .Mui-selected {
-    border-bottom: 2px solid #aa0303 !important;
-  }
-  .css-bv86iy-MuiTabs-indicator {
-    display: none !important;
+    border-bottom: 2px solid #aa0303;
   }
 }

@@ -1,8 +1,5 @@
-import React from "react";
-import { useTheme } from "@material-ui/core/styles";
-import Box from "@material-ui/core/Box";
+import { useEffect } from "react";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Statistics from "../components/Statistics";
@@ -19,15 +16,13 @@ import News from "../components/News";
 import Schools from "../components/Schools";
 import Footer from "../components/Footer";
 import Featured from "../components/Featured";
-import Container from "../components/common/Container";
-import Script from "next/script";
 import { NoSsr } from "@material-ui/core";
 import fs from "fs";
 
 import { ChatSupport, Schema, TagManager, Pixel, Tracking } from "../components/Head";
 
 export default function Home(props) {
-  React.useEffect(() => {
+  useEffect(() => {
     async function fetchCourseCatalog() {
       fetch("/api/courses")
         .then(function (r) {
@@ -111,15 +106,15 @@ export default function Home(props) {
         />
       </Head>
 
-      <NoSsr>
-        {/* <TagManager /> */}
-        {/* <Pixel /> */}
-        {/* <Tracking /> */}
-        {/* <ChatSupport /> */}
-        <Header data={props.header.html} />
+      <TagManager />
+      <Pixel />
+      <Tracking />
+      <ChatSupport />
+      <Header data={props.header.html} />
 
-        {props.error && <h3>{props.error}</h3>}
-        <section style={{ backgroundColor: "#f7f9fc" }}>{props.home && <Hero heroPost={props.home.hero} />}</section>
+      {props.error && <h3>{props.error}</h3>}
+      <section style={{ backgroundColor: "#f7f9fc" }}>{props.home && <Hero heroPost={props.home.hero} />}</section>
+      <NoSsr>
         {props.home && <Statistics statsPost={props.home.statistics} />}
         {props.home && <Featured featured={props.home.featured} />}
         {props.home && <Reviews reviews={props.home.reviews} />}
@@ -132,6 +127,7 @@ export default function Home(props) {
         {props.home && <About about={props.home.about} />}
         {props.home && <Courses learning={props.home.learning} />}
         {props.home && <Stem stem={props.home.stem} />}
+
         {props.home && <Features wwo={props.home.wwo} stem={props.home.stem_feat} />}
         <section style={{ backgroundColor: "#f7f9fc" }}>
           {props.home && <Team staff={props.home.staff} />}

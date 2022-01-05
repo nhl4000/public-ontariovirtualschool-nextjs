@@ -109,7 +109,7 @@ const Main = (props) => {
                     if (typeof course.yoast_head_json.og_image === "undefined") {
                       return false;
                     }
-                    console.log(course);
+                    course.home_course_grade = course.home_course_grade[0];
                     switch (course.home_course_grade) {
                       case "Grade 12":
                         return (
@@ -176,6 +176,7 @@ const Main = (props) => {
                                   </Box>
                                 </Link>
                                 <Box flexGrow={1} />
+                                {console.log(typeof course.course_id)}
                                 <Box
                                   component={CardActions}
                                   justifyContent={"center"}
@@ -186,8 +187,8 @@ const Main = (props) => {
                                     variant="contained"
                                     size="small"
                                     className={styles.redBtn}
-                                    data-id={course.id}
-                                    data-product-id={course.id}
+                                    data-id={typeof course.course_id === "undefined" ? 0 : course.course_id}
+                                    data-product-id={typeof course.course_id === "undefined" ? 0 : course.course_id}
                                     data-title={
                                       course.title.rendered.toString().trim() +
                                       ", " +
@@ -226,6 +227,7 @@ const Main = (props) => {
               <Grid container spacing={2}>
                 {courses.map((course, index) =>
                   (() => {
+                    course.home_course_grade = course.home_course_grade[0];
                     switch (course.home_course_grade) {
                       case "Grade 11":
                         return (
@@ -351,6 +353,7 @@ const Main = (props) => {
               <Grid container spacing={2}>
                 {courses.map((course, index) =>
                   (() => {
+                    course.home_course_grade = course.home_course_grade[0];
                     switch (course.home_course_grade) {
                       case "Grade 10":
                         return (
@@ -474,6 +477,7 @@ const Main = (props) => {
               <Grid container spacing={2}>
                 {courses.map((course, index) =>
                   (() => {
+                    course.home_course_grade = course.home_course_grade[0];
                     switch (course.home_course_grade) {
                       case "Grade 9":
                         return (
@@ -597,6 +601,7 @@ const Main = (props) => {
               <Grid container spacing={2}>
                 {courses.map((course, index) =>
                   (() => {
+                    course.home_course_grade = course.home_course_grade[0];
                     switch (course.home_course_grade) {
                       case "Grade 8":
                       case "Grade 7":
@@ -673,7 +678,12 @@ const Main = (props) => {
                                   justifyContent={"center"}
                                   className="shomob"
                                   href="https://www.ontariovirtualschool.ca/register-online/">
-                                  <Button className={styles.redBtn} color="primary" variant="contained" size="small" fullWidth>
+                                  <Button
+                                    className={styles.redBtn}
+                                    color="primary"
+                                    variant="contained"
+                                    size="small"
+                                    fullWidth>
                                     Register Now
                                   </Button>
                                 </Box>
@@ -682,7 +692,12 @@ const Main = (props) => {
                                   justifyContent={"center"}
                                   className="shomob"
                                   href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
-                                  <Button className={styles.ylBtn} color="secondary" variant="contained" size="small" fullWidth>
+                                  <Button
+                                    className={styles.ylBtn}
+                                    color="secondary"
+                                    variant="contained"
+                                    size="small"
+                                    fullWidth>
                                     View Course Outline
                                   </Button>
                                 </Box>
@@ -717,7 +732,7 @@ const Main = (props) => {
               <Grid container spacing={2}>
                 {courses.map((course, index) =>
                   (() => {
-                    return false;
+                    course.home_course_grade = course.home_course_grade[0];
                     switch (course.home_course_grade) {
                       case "Upgrade":
                         return (
@@ -793,7 +808,12 @@ const Main = (props) => {
                                   justifyContent={"center"}
                                   className="shomob"
                                   href="https://www.ontariovirtualschool.ca/register-online/">
-                                  <Button className={styles.redBtn} color="primary" variant="contained" size="small" fullWidth>
+                                  <Button
+                                    className={styles.redBtn}
+                                    color="primary"
+                                    variant="contained"
+                                    size="small"
+                                    fullWidth>
                                     Register Now
                                   </Button>
                                 </Box>
@@ -802,7 +822,12 @@ const Main = (props) => {
                                   justifyContent={"center"}
                                   className="shomob"
                                   href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
-                                  <Button className={styles.ylBtn} color="secondary" variant="contained" size="small" fullWidth>
+                                  <Button
+                                    className={styles.ylBtn}
+                                    color="secondary"
+                                    variant="contained"
+                                    size="small"
+                                    fullWidth>
                                     View Course Outline
                                   </Button>
                                 </Box>

@@ -125,7 +125,7 @@ const Courses = (props) => {
                         component="video"
                         alt="Ontario Virtual Schoool"
                         width="100%"
-                        image={learn.home_learning_video}
+                        image={learn.home_learning_video[0]}
                         src="https://www.ontariovirtualschool.ca/wp-content/themes/ontario-vs/images/landing-pages/Math.mov"
                         title="Ontario Virtual Schoool"
                         autoPlay

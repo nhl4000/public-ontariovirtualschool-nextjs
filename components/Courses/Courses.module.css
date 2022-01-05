@@ -1,9 +1,36 @@
-.VertVideoBox{
+.VertVideoBox {
   max-height: 250px !important;
   max-width: 150px !important;
 }
 
-.VertVideoBox .MuiCardContent-root{
+.VertVideoBox .MuiCardContent-root {
   padding: 5px !important;
   padding-bottom: 5px !important;
+}
+
+.vertVideo {
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.vertVideo .MuiCardMedia-media {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.vertVideo {
+  max-width: 100% !important;
+  margin: 10px auto !important;
+  padding: 5px 10px !important;
+}
+
+.vertVideo .MuiBox-root-94,
+.vertVideo .jss94 {
+  padding: 5px !important;
+}
+
+.vertVideo .MuiCardMedia-media {
+  width: 100% !important;
+  height: 175px !important;
 }
