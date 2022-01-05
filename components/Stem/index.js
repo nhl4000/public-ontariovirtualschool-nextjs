@@ -12,6 +12,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Container from "../common/Container";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import styles from "./Stem.module.css";
 
 const Stem = (props) => {
   const [stems, setStems] = useState(props.stem);
@@ -66,14 +67,14 @@ const Stem = (props) => {
                 data-aos={isMd ? "fade-right" : "fade-up"}>
                 <Box component={CardContent}>
                   <Box border={`1px solid ${theme.palette.divider}`} sx={{ height: "380px" }}>
-                    <Card>
+                    <Card className={styles.HorizVideo}>
                       <CardMedia
                         component="iframe"
                         alt="Ontatio Virtual Schoool"
                         height="100%"
                         width="100%"
                         src={stem.home_stem_video}
-                        title="Ontatio Virtual Schoool"
+                        title="Ontario Virtual Schoool"
                         autoPlay
                         allow="autoplay"
                         playsInline
@@ -85,6 +86,7 @@ const Stem = (props) => {
             </Box>
             <Box marginTop={3} display={"flex"} justifyContent={"center"}>
               <Button
+                className="redBtn"
                 component={"a"}
                 target={"_blank"}
                 variant="contained"

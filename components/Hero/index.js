@@ -25,14 +25,14 @@ const Hero = (props) => {
   const anim = props.heroPost?.animated.split(",");
 
   return (
-    <Container>
+    <Container className={styles.HeroWrapper}>
       <Box padding={0}>
         <Grid
           container
           spacing={4}
           // minHeight="85vh"
           marginTop={2}>
-          <Grid className={styles.heroWrapper} item container xs={12} md={6}>
+          <Grid item container xs={12} md={6}>
             <Box data-aos={isMd ? "fade-right" : "fade-up"}>
               <Box marginBottom={2}>
                 <Typography
@@ -80,7 +80,7 @@ const Hero = (props) => {
                     image={play ? null : video}
                     title="Ontario Virtual School"
                     style={{ backgroundColor: "#f7f9fc" }}
-                    // autoPlay
+                  // autoPlay
                   />
                 </Card>
                 <PlayCircleFilledOutlinedIcon

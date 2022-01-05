@@ -52,6 +52,7 @@ const Features = (props) => {
                       </Box>
                       <Box xs={12} marginTop={4}>
                         <Button
+                          className="redBtn"
                           component={"a"}
                           variant="contained"
                           color="primary"
@@ -63,6 +64,7 @@ const Features = (props) => {
                         </Button>
                         &nbsp;
                         <Button
+                          className="ylBtn"
                           component={"a"}
                           href={"#team"}
                           variant="contained"

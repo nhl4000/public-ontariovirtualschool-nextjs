@@ -12,6 +12,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Container from "../common/Container";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import styles from "./Courses.module.css";
 
 const Courses = (props) => {
   const [learns, setLearns] = useState(props.learning);
@@ -108,12 +109,13 @@ const Courses = (props) => {
                 </Box>
               </Box>
               <Box
+                className={styles.VertVideoBox}
                 component={Card}
                 maxWidth={250}
                 boxShadow={3}
                 border={`1px solid ${theme.palette.divider}`}
                 borderRadius={5}
-                marginLeft={-12}
+                marginLeft={-10}
                 zIndex={1}
                 data-aos={isMd ? "fade-left" : "fade-up"}>
                 <Box component={CardContent}>
@@ -141,6 +143,7 @@ const Courses = (props) => {
             </Box>
             <Box marginTop={3} display={"flex"} justifyContent={"center"}>
               <Button
+                className="redBtn"
                 component={"a"}
                 target={"_blank"}
                 variant="contained"

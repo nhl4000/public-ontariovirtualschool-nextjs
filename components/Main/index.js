@@ -73,7 +73,7 @@ const Main = (props) => {
   };
 
   return (
-    <Box>
+    <Box className={styles.CoursesBox}>
       <Container>
         <Box marginBottom={4}>
           <Typography
@@ -185,7 +185,7 @@ const Main = (props) => {
                                     color="primary"
                                     variant="contained"
                                     size="small"
-                                    className="btnAddtoCart"
+                                    className={styles.redBtn}
                                     data-id={course.id}
                                     data-product-id={course.id}
                                     data-title={
@@ -201,6 +201,7 @@ const Main = (props) => {
                                     Add to Cart
                                   </Button>
                                   <Button
+                                    className={styles.ylBtn}
                                     color="secondary"
                                     variant="contained"
                                     size="small"
@@ -299,6 +300,7 @@ const Main = (props) => {
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
                                   <Button
+                                    className={styles.redBtn}
                                     color="primary"
                                     variant="contained"
                                     size="small"
@@ -309,6 +311,7 @@ const Main = (props) => {
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
                                   <Button
+                                    className={styles.ylBtn}
                                     color="secondary"
                                     variant="contained"
                                     size="small"
@@ -319,6 +322,7 @@ const Main = (props) => {
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
                                   <Button
+                                    className={styles.redBtn}
                                     color="primary"
                                     variant="contained"
                                     size="small"
@@ -326,6 +330,7 @@ const Main = (props) => {
                                     Register Now
                                   </Button>
                                   <Button
+                                    className={styles.ylBtn}
                                     color="secondary"
                                     variant="contained"
                                     size="small"
@@ -418,6 +423,7 @@ const Main = (props) => {
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
                                   <Button
+                                    className={styles.redBtn}
                                     color="primary"
                                     variant="contained"
                                     size="small"
@@ -428,6 +434,7 @@ const Main = (props) => {
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
                                   <Button
+                                    className={styles.ylBtn}
                                     color="secondary"
                                     variant="contained"
                                     size="small"
@@ -438,6 +445,7 @@ const Main = (props) => {
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
                                   <Button
+                                    className={styles.redBtn}
                                     color="primary"
                                     variant="contained"
                                     size="small"
@@ -445,6 +453,7 @@ const Main = (props) => {
                                     Register Now
                                   </Button>
                                   <Button
+                                    className={styles.ylBtn}
                                     color="secondary"
                                     variant="contained"
                                     size="small"
@@ -537,6 +546,7 @@ const Main = (props) => {
                                 <Box flexGrow={1} />
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
                                   <Button
+                                    className={styles.redBtn}
                                     color="primary"
                                     variant="contained"
                                     size="small"
@@ -547,6 +557,7 @@ const Main = (props) => {
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shomob">
                                   <Button
+                                    className={styles.ylBtn}
                                     color="secondary"
                                     variant="contained"
                                     size="small"
@@ -557,6 +568,7 @@ const Main = (props) => {
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
                                   <Button
+                                    className={styles.redBtn}
                                     color="primary"
                                     variant="contained"
                                     size="small"
@@ -564,6 +576,7 @@ const Main = (props) => {
                                     Register Now
                                   </Button>
                                   <Button
+                                    className={styles.ylBtn}
                                     color="secondary"
                                     variant="contained"
                                     size="small"
@@ -660,7 +673,7 @@ const Main = (props) => {
                                   justifyContent={"center"}
                                   className="shomob"
                                   href="https://www.ontariovirtualschool.ca/register-online/">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                  <Button className={styles.redBtn} color="primary" variant="contained" size="small" fullWidth>
                                     Register Now
                                   </Button>
                                 </Box>
@@ -669,12 +682,13 @@ const Main = (props) => {
                                   justifyContent={"center"}
                                   className="shomob"
                                   href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                  <Button className={styles.ylBtn} color="secondary" variant="contained" size="small" fullWidth>
                                     View Course Outline
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
                                   <Button
+                                    className={styles.redBtn}
                                     color="primary"
                                     variant="contained"
                                     size="small"
@@ -682,6 +696,7 @@ const Main = (props) => {
                                     Register Now
                                   </Button>
                                   <Button
+                                    className={styles.ylBtn}
                                     color="secondary"
                                     variant="contained"
                                     size="small"
@@ -778,7 +793,7 @@ const Main = (props) => {
                                   justifyContent={"center"}
                                   className="shomob"
                                   href="https://www.ontariovirtualschool.ca/register-online/">
-                                  <Button color="primary" variant="contained" size="small" fullWidth>
+                                  <Button className={styles.redBtn} color="primary" variant="contained" size="small" fullWidth>
                                     Register Now
                                   </Button>
                                 </Box>
@@ -787,12 +802,13 @@ const Main = (props) => {
                                   justifyContent={"center"}
                                   className="shomob"
                                   href={"https://www.ontariovirtualschool.ca/courses/" + course.title.rendered}>
-                                  <Button color="secondary" variant="contained" size="small" fullWidth>
+                                  <Button className={styles.ylBtn} color="secondary" variant="contained" size="small" fullWidth>
                                     View Course Outline
                                   </Button>
                                 </Box>
                                 <Box component={CardActions} justifyContent={"center"} className="shodesk">
                                   <Button
+                                    className={styles.redBtn}
                                     color="primary"
                                     variant="contained"
                                     size="small"
@@ -800,6 +816,7 @@ const Main = (props) => {
                                     Register Now
                                   </Button>
                                   <Button
+                                    className={styles.ylBtn}
                                     color="secondary"
                                     variant="contained"
                                     size="small"

@@ -2,6 +2,7 @@
   margin-top: 10px !important;
   background-color: #aa0303 !important;
   color: #ffffff !important;
+  border-radius: 25px !important;
 }
 
 @media screen and (min-width: 450px) {
