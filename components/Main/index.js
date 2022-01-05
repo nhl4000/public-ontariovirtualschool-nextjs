@@ -176,7 +176,6 @@ const Main = (props) => {
                                   </Box>
                                 </Link>
                                 <Box flexGrow={1} />
-                                {console.log(typeof course.course_id)}
                                 <Box
                                   component={CardActions}
                                   justifyContent={"center"}

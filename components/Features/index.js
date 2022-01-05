@@ -86,7 +86,7 @@ const Features = (props) => {
                         width="90%"
                         frameBorder="0"
                         shadow="0"
-                        image="https://player.vimeo.com/video/307150905?title=0&byline=0&portrait=0&color=ffffff&autoplay=0&dnt=0&muted=1&loop=1&autopause=0"
+                        image={feat.home_wwo_video[0]}
                         title="Ontario Virtual Schoool"
                       />
                     </Card>
