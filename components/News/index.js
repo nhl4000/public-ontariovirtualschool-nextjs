@@ -100,6 +100,7 @@ export default function News(props) {
                     </Box>
                     <Box component={CardActions} justifyContent={"flex-end"}>
                       <Button
+                        className="ylBtn"
                         color="secondary"
                         variant="contained"
                         size="small"
@@ -114,7 +115,7 @@ export default function News(props) {
           })}
         </Carousel>
         <Grid item container xs={12} justifyContent={"center"} style={{ marginTop: 10 }}>
-          <Button color={"secondary"} variant={"contained"} size={"large"}>
+          <Button className="ylBtn" color={"secondary"} variant={"contained"} size={"large"}>
             READ ALL
           </Button>
         </Grid>

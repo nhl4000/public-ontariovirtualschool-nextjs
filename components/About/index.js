@@ -47,7 +47,8 @@ const About = (props) => {
                 alignItems={{ xs: "stretched", sm: "flex-start" }}>
                 <Box>
                   <Button
-                    component={"a"}
+                    className="ylBtn"
+                    component={Button}
                     href={"#"}
                     target={"_blank"}
                     variant="contained"
@@ -59,6 +60,7 @@ const About = (props) => {
                   </Button>
                 </Box>
                 <Box
+                  className="redBtn"
                   component={Button}
                   variant="contained"
                   color="primary"

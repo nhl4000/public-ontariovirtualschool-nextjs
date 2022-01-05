@@ -110,14 +110,15 @@ ul {
 /*End of Hero Styles*/
 
 /*Red button*/
-.jss10 button.MuiButton-contained,
-.jss77 button.MuiButton-contained,
-.jss21 .MuiButton-containedPrimary,
-.MuiButton-containedPrimary,
 .redBtn {
   color: #ffffff !important;
   background-color: #aa0303 !important;
   margin: 5px !important;
+  border-radius: 25px !important;
+}
+
+.ylBtn{
+  border-radius: 25px !important;
 }
 
 /*Yellow Button*/
@@ -429,11 +430,7 @@ ul {
     margin-left: auto !important;
   }
 
-  .jss10 button.MuiButton-contained,
-  .jss21 .MuiButton-containedPrimary,
-  .jss77 button.MuiButton-contained,
-  .MuiButton-containedPrimary,
-  .redBtn {
+ .redBtn {
     margin: 0px !important;
   }
 }

@@ -17,6 +17,7 @@ import BorderColorIcon from "@material-ui/icons/BorderColor";
 //import PostAddIcon from '@material-ui/icons/PostAdd';
 import DescriptionIcon from "@material-ui/icons/Description";
 import Container from "../common/Container";
+import styles from './Register.module.css';
 
 // TODO:
 // import "./Register.css";
@@ -121,7 +122,7 @@ const Register = (props) => {
                 )}
               </div>
             </Box>
-            <Box xs={12} style={{ textAlign: "center" }} suppressHydrationWarning>
+            <Box xs={12} style={{ textAlign: "center", paddingTop: "40px" }} suppressHydrationWarning>
               <Typography
                 color="textSecondary"
                 className="leftText"
@@ -131,6 +132,7 @@ const Register = (props) => {
                 Our Guidance Counsellors are here to help you!
               </Typography>
               <Button
+                className="redBtn"
                 component={"a"}
                 href={"#"}
                 target={"_blank"}

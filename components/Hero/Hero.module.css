@@ -1,3 +1,7 @@
+.HeroWrapper{
+  padding-top: 0 !important;
+}
+
 .HeroImg .HeroPlay {
   position: absolute;
   top: 35%;
@@ -15,9 +19,9 @@
   height: 100%;
 }
 
-.heroWrapper .subtitle p {
-  font-size: 1.1rem !important;
-  line-height: 1.4 !important;
+.HeroWrapper .subtitle p {
+  font-size: 1.1rem ;
+  line-height: 1.4 ;
 }
 
 .open {
@@ -53,6 +57,7 @@
   margin-top: 10px;
   background-color: #aa0303;
   color: #ffffff;
+  border-radius: 25px;
 }
 
 @media screen and (min-width: 450px) {

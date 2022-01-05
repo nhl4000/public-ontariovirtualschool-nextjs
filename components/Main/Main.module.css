@@ -3,3 +3,15 @@
   text-align: center;
   padding: 5px;
 }
+
+.CoursesBox .redBtn{
+  color: #ffffff !important;
+  background-color: #aa0303 !important;
+  margin: 5px !important;
+  border-radius: 4px !important;
+  text-align: center !important;
+}
+
+.CoursesBox .ylBtn{
+    text-align: center !important;
+}

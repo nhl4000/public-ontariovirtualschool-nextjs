@@ -1,0 +1,9 @@
+.VertVideoBox{
+  max-height: 250px !important;
+  max-width: 150px !important;
+}
+
+.VertVideoBox .MuiCardContent-root{
+  padding: 5px !important;
+  padding-bottom: 5px !important;
+}

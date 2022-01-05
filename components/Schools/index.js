@@ -151,7 +151,7 @@ export default function Schools(props) {
             <br />
             Our Guidance Counsellors are here to help you!
           </Typography>
-          <Button component={"a"} href={"#"} target={"_blank"} variant="contained" color="primary" size="large">
+          <Button className="redBtn" component={"a"} href={"#"} target={"_blank"} variant="contained" color="primary" size="large">
             SCHEDULE A COUNSELLING APPOINTMENT
           </Button>
         </Box>
