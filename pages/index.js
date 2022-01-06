@@ -118,11 +118,11 @@ export default function Home(props) {
         <Hero heroPost={props.home.hero} />
       </section>
       <NoSsr>
-        {/* {props.home && <Statistics statsPost={props.home.statistics} />} */}
-        {/* {props.home && <Featured featured={props.home.featured} />} */}
-        {/* {props.home && <Reviews reviews={props.home.reviews} />} */}
+        {props.home && <Statistics statsPost={props.home.statistics} />}
+        {props.home && <Featured featured={props.home.featured} />}
+        {props.home && <Reviews reviews={props.home.reviews} />}
 
-        {/* <section style={{ backgroundColor: "#f7f9fc" }}>
+        <section style={{ backgroundColor: "#f7f9fc" }}>
           {props.home && <Main courses={props.home.courses} />}
           {props.home && <Register steps={props.home.steps} />}
         </section>
@@ -137,7 +137,7 @@ export default function Home(props) {
           {props.home && <VideoReviews reviews={props.home.video_reviews} />}
         </section>
         {props.home && <News news={props.home.news} />}
-        {props.home && <Schools schools={props.home.schools} />} */}
+        {props.home && <Schools schools={props.home.schools} />}
         <Footer />
       </NoSsr>
 
