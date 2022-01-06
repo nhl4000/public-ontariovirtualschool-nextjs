@@ -79,11 +79,15 @@ ul {
 }
 
 /*Red button*/
-.redBtn {
+.MuiButtonBase-root.red-button {
   color: #ffffff;
   background-color: #aa0303;
   margin: 5px;
   border-radius: 25px;
+  padding: 8px 22px;
+}
+.MuiButtonBase-root.red-button:hover {
+  background-color: #aa0303;
 }
 
 .ylBtn {
@@ -91,6 +95,15 @@ ul {
 }
 
 /*Yellow Button*/
+.MuiButtonBase-root.yellow-button {
+  color: #fff;
+  background-color: #f9b934;
+  margin: 5px;
+}
+.MuiButtonBase-root.yellow-button:hover {
+  background-color: #f9b934;
+}
+
 .MuiButton-containedSecondary {
   color: #ffffff;
   background-color: #f9b934;

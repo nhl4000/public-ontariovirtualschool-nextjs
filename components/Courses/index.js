@@ -83,7 +83,6 @@ const Courses = (props) => {
                         allow="autoplay"
                         playsInline
                       /> */}
-
                       <video
                         className="MuiCardMedia-root MuiCardMedia-media"
                         autoPlay
@@ -108,7 +107,7 @@ const Courses = (props) => {
                   </Box>
                 </Box>
               </Box>
-              <Box
+              {/* <Box
                 className={styles.VertVideoBox}
                 component={Card}
                 maxWidth={250}
@@ -139,7 +138,7 @@ const Courses = (props) => {
                     </Card>
                   </Box>
                 </Box>
-              </Box>
+              </Box> */}
             </Box>
             <Box marginTop={3} display={"flex"} justifyContent={"center"}>
               <Button

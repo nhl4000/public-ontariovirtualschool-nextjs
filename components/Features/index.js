@@ -29,6 +29,7 @@ const Features = (props) => {
                 style={{
                   textTransform: "uppercase",
                   fontWeight: "medium",
+                  color: "#f9b934",
                 }}
                 gutterBottom
                 color={"secondary"}

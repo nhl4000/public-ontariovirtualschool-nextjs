@@ -14,6 +14,10 @@ import Container from "../common/Container";
 import Search from "../Search";
 
 const Hero = (props) => {
+  if (typeof props.heroPost === "undefined") {
+    return <></>;
+  }
+
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true,
@@ -80,7 +84,6 @@ const Hero = (props) => {
                     image={play ? null : video}
                     title="Ontario Virtual School"
                     style={{ backgroundColor: "#f7f9fc" }}
-                    // autoPlay
                   />
                 </Card>
                 <PlayCircleFilledOutlinedIcon

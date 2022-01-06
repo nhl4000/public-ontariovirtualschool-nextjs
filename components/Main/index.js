@@ -87,7 +87,11 @@ const Main = (props) => {
             Our Courses
           </Typography>
           <Box fontWeight={700} data-aos={"fade-up"}>
-            <Typography variant={"h3"} gutterBottom align={"center"}>
+            <Typography
+              variant={"h3"}
+              gutterBottom
+              align={"center"}
+              style={{ fontFamily: "Inter,sans-serif", fontWeight: "700", color: "#3a3a3a" }}>
               Our Most Popular Courses
             </Typography>
           </Box>
@@ -185,7 +189,7 @@ const Main = (props) => {
                                     color="primary"
                                     variant="contained"
                                     size="small"
-                                    className={styles.redBtn}
+                                    className="red-button"
                                     data-id={typeof course.course_id === "undefined" ? 0 : course.course_id}
                                     data-product-id={typeof course.course_id === "undefined" ? 0 : course.course_id}
                                     data-title={
@@ -201,7 +205,7 @@ const Main = (props) => {
                                     Add to Cart
                                   </Button>
                                   <Button
-                                    className={styles.ylBtn}
+                                    className="yellow-button"
                                     color="secondary"
                                     variant="contained"
                                     size="small"

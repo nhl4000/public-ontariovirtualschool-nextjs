@@ -105,7 +105,7 @@ export default function VideoReviews(props) {
                 <CardActions>
                   <ListItem component="div" disableGutters style={{ padding: 0 }}>
                     <ListItemAvatar>
-                      <Avatar />
+                      <Avatar src={vrev.yoast_head_json.og_image ? vrev.yoast_head_json.og_image[0].url : ""} />
                     </ListItemAvatar>
                     <ListItemText style={{ margin: 0 }}>
                       <Typography

@@ -1,14 +1,27 @@
 .HeroBtn {
-  margin-top: 10px !important;
-  background-color: #aa0303 !important;
-  color: #ffffff !important;
-  border-radius: 25px !important;
+  margin-top: 10px;
+  background-color: #aa0303;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.searchComponent {
+  flex-direction: column;
 }
 
 @media screen and (min-width: 450px) {
   .HeroBtn {
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-    padding: 15px 25px !important;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .searchComponent {
+    flex-direction: row;
+  }
+  .searchComponent > * {
+    flex-grow: 1;
   }
 }

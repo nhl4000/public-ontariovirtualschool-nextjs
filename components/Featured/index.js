@@ -46,6 +46,7 @@ export default function Featured(props) {
             style={{
               textTransform: "uppercase",
               fontWeight: "normal",
+              color: "#f9b934",
             }}
             gutterBottom
             color={"secondary"}
@@ -133,7 +134,7 @@ export default function Featured(props) {
                       className={styles.featurelImg}
                       image={feature.yoast_head_json.og_image[0].url}
                       style={{
-                        height: 50
+                        height: 50,
                       }}
                     />
                   </Box>

@@ -101,9 +101,7 @@ const Reviews = (props) => {
                   <CardActions>
                     <ListItem component="div" disableGutters style={{ padding: 0 }}>
                       <ListItemAvatar>
-                        <Avatar
-                        //src={rev.yoast_head_json.og_image[0].url}
-                        />
+                        <Avatar src={rev.yoast_head_json.og_image[0].url} />
                       </ListItemAvatar>
                       <ListItemText width={"100%"} style={{ margin: 0 }}>
                         <p>
@@ -132,7 +130,7 @@ const Reviews = (props) => {
           </Carousel>
           <Box marginTop={10} display={"flex"} justifyContent={"center"}>
             <Button
-              className="redBtn"
+              className="red-button"
               component={"a"}
               href="/#video"
               variant="contained"

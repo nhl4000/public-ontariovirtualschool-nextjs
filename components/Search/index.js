@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
-import { makeStyles } from "@material-ui/styles";
+import { createStyles, makeStyles } from "@material-ui/styles";
 import { Autocomplete } from "@mui/material";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -19,27 +19,33 @@ const Search = (props) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const [courses, setCourses] = useState([]);
-  const useStyles = makeStyles({
-    "@global": {
-      '.MuiAutocomplete-option[data-focus="true"]': {
-        background: "#aa0304",
+  const useStyles = makeStyles(() =>
+    createStyles({
+      "@global": {
+        '.search.MuiAutocomplete-option[data-focus="true"]': {
+          background: "#aa0304",
+        },
+        ".search.MuiAutocomplete-root .MuiFormControl-root": {
+          width: "unset",
+        },
+        ".search.MuiAutocomplete-root .MuiInputBase-root": {
+          borderRadius: "25px",
+          marginRight: "5px",
+        },
+        ".search.MuiAutocomplete-inputRoot .search.MuiAutocomplete-input.MuiAutocomplete-input.MuiAutocomplete-input": {
+          width: "unset",
+        },
+        ".search.MuiButtonBase-root": {
+          borderRadius: "25px",
+          padding: "5px",
+        },
+        ".search.MuiButtonBase-inputRoot": {
+          padding: "50px",
+        },
       },
-      ".MuiAutocomplete-root .MuiFormControl-root": {
-        width: "unset",
-      },
-      ".MuiAutocomplete-root .MuiInputBase-root": {
-        borderRadius: "25px",
-        marginRight: "5px",
-      },
-      ".MuiAutocomplete-inputRoot .MuiAutocomplete-input.MuiAutocomplete-input.MuiAutocomplete-input": {
-        width: "unset",
-      },
-      ".MuiButtonBase-root": {
-        borderRadius: "25px",
-        padding: "5px",
-      },
-    },
-  });
+    })
+  );
+
   const classes = useStyles();
 
   useEffect(() => {
@@ -79,7 +85,7 @@ const Search = (props) => {
   };
 
   return (
-    <Box display="flex" gap={2} {...props}>
+    <Box display="flex" gap={2} {...props} className={styles.searchComponent + " search"}>
       <Autocomplete
         freeSolo
         disableClearable
