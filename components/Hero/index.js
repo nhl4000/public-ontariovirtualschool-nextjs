@@ -14,16 +14,17 @@ import Container from "../common/Container";
 import Search from "../Search";
 
 const Hero = (props) => {
-  if (typeof props.heroPost === "undefined") {
-    return <></>;
-  }
-
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true,
   });
   const [open, setOpen] = React.useState(true);
   const [play, setCheck] = React.useState(true);
+
+  if (typeof props.heroPost === "undefined") {
+    return <></>;
+  }
+
   const video =
     props.heroPost?.herovid + "?title=0&byline=0&portrait=0&color=ffffff&autoplay=0&dnt=0&loop=0&autopause=0&mute";
   const anim = props.heroPost?.animated.toString().split(",");

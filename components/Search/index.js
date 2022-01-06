@@ -35,12 +35,9 @@ const Search = (props) => {
         ".search.MuiAutocomplete-inputRoot .search.MuiAutocomplete-input.MuiAutocomplete-input.MuiAutocomplete-input": {
           width: "unset",
         },
-        ".search.MuiButtonBase-root": {
+        ".search .MuiAutocomplete-inputRoot": {
           borderRadius: "25px",
           padding: "5px",
-        },
-        ".search.MuiButtonBase-inputRoot": {
-          padding: "50px",
         },
       },
     })
